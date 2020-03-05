@@ -1,0 +1,11 @@
+{
+  "name": "sabor-de-carne",
+  "version": "0.0.1",
+  "description": "Site institucional churrascaria Sabor de Carne",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Matheus do E Santos",
+  "license": "MIT"
+}
