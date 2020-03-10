@@ -1,0 +1,6 @@
+:root {
+    --gap: 16px;
+    --gap-sm: 32px;
+    --gap-md: 64px;
+    --gap-lg: 128px;
+}
