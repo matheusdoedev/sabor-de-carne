@@ -3,3 +3,11 @@ a {
     padding: 10px;
 }
 
+li:last-child a {
+    padding-right: 0;
+}
+
+li:first-child a {
+    padding-left: 0;
+}
+

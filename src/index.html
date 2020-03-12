@@ -17,6 +17,7 @@
         <!-- CSS Generic -->
         <link rel="stylesheet" href="css/generic/normalize.css">
         <link rel="stylesheet" href="css/generic/reset.css">
+        <link rel="stylesheet" href="css/generic/grid.css">
         <link href="https://fonts.googleapis.com/css?family=Lato:300,400,400i|Playfair+Display:700,800,900&display=swap" rel="stylesheet"> 
 
         <!-- CSS Elements -->
@@ -24,41 +25,46 @@
         <link rel="stylesheet" href="css/elements/fonts.css">
 
         <!-- CSS Objects -->
-        <link rel="stylesheet" href="css/objects/grid.css">
+        <link rel="stylesheet" href="css/objects/header.css">
+        <link rel="stylesheet" href="css/objects/nav.css">
+
+        <!-- CSS Components -->
+        <link rel="stylesheet" href="css/components/main-home.css">
+        
 
     </head>
 
     <body>
-        <main>
+        <main class="home-main">
             <div class="container">
                 <!-- topo -->
-                <header class="header">   
+                <header class="header header-home">   
                     <div class="row">
                         <div class="col-12 col-md-4">
                             <a class="nav-brand" href="index.html"><h1>SC</h1></a>
                         </div>
-                        <nav class="col-12 col-md-8">
+                        <nav class="col-12 col-md-8 header-nav">
                             <ul class="nav-menu">
-                                <li class="nav-item"><a href="index.html">Inicio</a></li>
-                                <li class="nav-item"><a href="#">Churrascaria</a></li>
-                                <li class="nav-item"><a href="#">Menu</a></li>
-                                <li class="nav-item"><a href="#">Sobre</a></li>
-                                <li class="nav-item"><a href="#">Contato</a></li>
+                                <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#">Churrascaria</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#">Menu</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#">Sobre</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#">Contato</a></li>
                             </ul>
                         </nav>
                     </div>
                 </header>
                 <!-- fim do topo -->
                 <!-- intro -->
-                <div class="row">
-                    <div>
-                        <section class="intro">
-                            <h2 class="intro-title">Sabor de Carne</h2>
-                            <p>Lorem ipsum is simply dummy text of the printing and typesetting industry.</p>
+                <section class="home-intro">   
+                    <div class="row">
+                        <div class="col-12">
+                            <h2 class="home-intro-title">Sabor de Carne</h2>
+                            <p class="home-intro-p">Lorem ipsum is simply dummy text of the printing and typesetting industry.</p>
                             <a class="btn primary-btn" href="">Faça sua Reserva!</a>
-                        </section>
+                        </div>
                     </div>
-                </div>
+                </section>
                 <!-- fim intro -->
             </div>
         </main>

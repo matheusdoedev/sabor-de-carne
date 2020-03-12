@@ -1,0 +1,35 @@
+.home-main {
+    background: url('../../img/bg-main.jpg');
+}
+
+.header-home .nav-brand {
+    color: var(--color-support-2);
+}
+
+.header-home .nav-link {
+    color: var(--color-support-2);
+}
+
+.header-home .nav-link:hover {
+    color: var(--color-primary);
+}
+
+/* intro */
+
+.home-intro {
+    padding-top: var(--gap-lg);
+    padding-bottom: var(--gap-lg);
+}
+
+.home-intro-title {
+    color: var(--color-support-2);
+    letter-spacing: .1em;
+    text-align: center;
+}
+
+.home-intro-p {
+    color: var(--color-support-2);
+    font-style: italic;
+    margin: var(--gap) auto 0 auto;
+    text-align: center;
+}
