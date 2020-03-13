@@ -1,0 +1,17 @@
+.menu-home {
+    padding: var(--gap-lg) 0;
+    background: var(--color-support-2);
+}
+
+.menu-home-title {
+    margin-bottom: var(--gap-sm);
+}
+
+.menu-home-img {
+    margin-bottom: var(--gap-sm);
+}
+
+.menu-home .btn {
+    text-align: center;
+    margin: 0 auto;
+}

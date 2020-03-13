@@ -1,0 +1,12 @@
+.sobre-home {
+    padding: var(--gap-lg) 0;
+    background: var(--color-support-1);
+}
+
+.sobre-home-title {
+    margin-bottom: var(--gap-sm);
+}
+
+.sobre-home-p {
+    margin-bottom: var(--gap-sm);
+}
