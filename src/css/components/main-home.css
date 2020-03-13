@@ -27,6 +27,17 @@
     text-align: center;
 }
 
+.home-intro-title::after {
+    content: '';
+    display: block;
+    width: 30px;
+    height: 1px;
+    margin: var(--gap-sm) auto var(--gap-sm) auto;
+    color: var(--color-support-2);
+    background: currentColor;
+    opacity: .4;
+}
+
 .home-intro-p {
     color: var(--color-support-2);
     font-style: italic;
