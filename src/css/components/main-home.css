@@ -44,3 +44,11 @@
     margin: var(--gap) auto 0 auto;
     text-align: center;
 }
+
+.home-intro .btn {
+    margin: var(--gap-sm) auto 0 auto;
+}
+
+.home-intro .btn-link {
+    text-align: center;
+}
