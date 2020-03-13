@@ -10,3 +10,9 @@
 .sobre-home-p {
     margin-bottom: var(--gap-sm);
 }
+
+.sobre-home .btn {
+    display: block;
+    max-width: 217px;
+    text-align: center;
+}

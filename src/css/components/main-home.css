@@ -14,6 +14,10 @@
     color: var(--color-primary);
 }
 
+.header-home .nav-item .active {
+    color: var(--color-primary);
+}
+
 /* intro */
 
 .home-intro {
@@ -46,9 +50,8 @@
 }
 
 .home-intro .btn {
+    display: block;
+    max-width: 300px;
     margin: var(--gap-sm) auto 0 auto;
-}
-
-.home-intro .btn-link {
     text-align: center;
 }

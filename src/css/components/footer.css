@@ -22,3 +22,7 @@
 .footer-nav-link:hover {
     color: var(--color-primary);
 }
+
+.footer-nav-item .active {
+    color: var(--color-primary);
+}

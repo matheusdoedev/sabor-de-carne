@@ -1,21 +1,15 @@
 .primary-btn {
     background: var(--color-secondary);
-}
-
-.primary-btn .btn-link {
     color: var(--color-support-2);
 }
 
 .primary-btn:hover {
-    background: var(--color-secondary);
+    background: var(--color-primary);
     color: var(--color-support-2);
 }
 
 .secondary-btn {
     background: var(--color-primary);
-}
-
-.secondary-btn .btn-link {
     color: var(--color-support-2);
 }
 

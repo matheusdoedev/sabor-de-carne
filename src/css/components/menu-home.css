@@ -15,3 +15,9 @@
     text-align: center;
     margin: 0 auto;
 }
+
+.menu-home .btn {
+    display: block;
+    max-width: 300px;
+    text-align: center;
+}
