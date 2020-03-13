@@ -8,3 +8,11 @@
     text-transform: uppercase;
     letter-spacing: .1em;
 }
+
+.nav-item:last-child .nav-link{
+    padding-right: 0;
+}
+
+.nav-item:first-child .nav-link{
+    padding-left: 0;
+}

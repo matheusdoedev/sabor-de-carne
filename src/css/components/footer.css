@@ -1,4 +1,24 @@
 .footer {
-    padding: var(--gap-md);
+    padding: var(--gap-lg);
     background: var(--color-support-3);
+}
+
+.footer-titles {
+    color: var(--color-support-1);
+    margin-bottom: var(--gap-sm);
+}
+
+.footer-nav-item {
+    margin-bottom: var(--gap);
+}
+
+.footer-nav-link {
+    padding-left: 0;
+    color: var(--color-support-1);
+    text-transform: uppercase;
+    letter-spacing: .1em;
+}
+
+.footer-nav-link:hover {
+    color: var(--color-primary);
 }

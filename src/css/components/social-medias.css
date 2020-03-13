@@ -1,0 +1,18 @@
+.social-medias {
+    display: flex;
+    flex-direction: row;
+}
+
+.social-medias-link {
+    padding: 0;
+    margin-right: var(--gap);
+}
+
+.social-medias-link:last-child {
+    margin-right: 0;
+}
+
+.footer-contatos {
+    color: var(--color-support-1);
+    line-height: 1.875em;
+}
