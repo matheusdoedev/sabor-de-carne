@@ -183,3 +183,69 @@
     color: var(--color-support-1);
     line-height: 1.875em;
 }
+
+/* header-internal-pages */
+.internal-page-main {
+    background: (--color-support-1);
+    box-shadow: -2px 2px 2px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.header-internal-pages .nav-brand {
+    color: var(--color-primary);
+}
+
+.header-internal-pages .nav-link {
+    color: var(--color-primary);
+}
+
+.header-internal-pages .nav-link:hover {
+    color: var(--color-secondary);
+}
+
+.header-internal-pages .nav-item .active {
+    color: var(--color-secondary);
+}
+
+/* internal pages capa */
+
+.internal-pages-capa {
+    content: '';
+    background: url('../img/capa-churrascaria.jpg');
+    height: 200px;
+}
+
+/* churrascaria-main */
+
+.churrascaria-main {
+    padding: var(--gap-lg) 0;
+}
+
+.subtitle {
+    color: var(--color-primary);
+}
+
+.subtitle::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 1px;
+    margin-top: var(--gap);
+    margin-bottom: var(--gap);
+    background: var(--color-support-3);
+    opacity: .2;
+}
+
+.churrascaria-cards {
+    margin-top: var(--gap-md);
+}
+
+.churrascaria-card-content {
+    width: 100%;
+    padding: var(--gap-sm);
+    background: var(--color-primary);
+}
+
+.churrascaria-card-title {
+    margin-bottom: var(--gap);
+    text-align: center;
+}
