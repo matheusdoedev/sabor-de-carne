@@ -26,3 +26,8 @@
 .footer-nav-item .active {
     color: var(--color-primary);
 }
+
+.footer-copy {
+    margin-top: var(--gap-sm);
+    color: var(--color-support-1);
+}
