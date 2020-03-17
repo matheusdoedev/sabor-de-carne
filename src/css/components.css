@@ -234,6 +234,7 @@
 
 .subtitle {
     color: var(--color-primary);
+    margin-bottom: var(--gap-md);
 }
 
 .subtitle::after {
@@ -321,4 +322,33 @@
 .reserva-textarea {
     height: 200px;
     padding-top: var(--gap);
+}
+
+/* menu */
+
+.menu-categoria {
+    margin-bottom: var(--gap);
+}
+
+.menu-item {
+    margin-bottom: var(--gap-sm);
+}
+
+.menu-item::after , .menu-item::before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 1px;
+    margin-top: var(--gap);
+    margin-bottom: var(--gap);
+    background: var(--color-support-3);
+    opacity: .2;
+}
+
+.menu-item:hover {
+    background: var(--color-support-2);
+}
+
+.menu-item-h4 {
+    margin-bottom: var(--gap);
 }

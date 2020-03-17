@@ -33,3 +33,9 @@
 .nav-item:first-child .nav-link{
     padding-left: 0;
 }
+
+/* sections */
+
+.section {
+    padding: var(--gap-lg);
+}
