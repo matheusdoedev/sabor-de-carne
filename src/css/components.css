@@ -20,6 +20,18 @@
     color: var(--color-support-2);
 }
 
+.submit-btn {
+    border: none;
+    background: var(--color-support-1);
+    color: var(--color-support-3);
+    cursor: pointer;
+}
+
+.submit-btn:hover {
+    background: var(--color-primary);
+    color: var(--color-support-1);
+}
+
 /* footer */
 
 .footer {
@@ -267,4 +279,46 @@
 
 .funcionamento-img {
     margin-top: var(--gap-md);
+}
+
+/* section - reserva */
+
+.reserva {
+    padding: var(--gap-lg);
+    background: var(--color-secondary);
+}
+
+.reserva-title {
+    margin-bottom: var(--gap-md);
+    color: var(--color-support-1);  
+}
+
+.form-title {
+    margin-bottom: var(--gap-sm);
+    color: var(--color-support-1);
+}
+
+.reserva-label , .reserva-input {
+    display: block;
+}
+
+.reserva-label {
+    margin-bottom: var(--gap);
+    color: var(--color-support-1);
+}
+
+.reserva-input , .reserva-textarea {
+    margin-bottom: var(--gap-sm);
+    width: 100%;
+    background: none;
+    height: 50px;
+    border: 1px solid var(--color-support-2);
+    padding-left: var(--gap);
+    padding-right: var(--gap);
+    color: var(--color-support-2);
+}
+
+.reserva-textarea {
+    height: 200px;
+    padding-top: var(--gap);
 }
