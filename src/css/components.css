@@ -249,3 +249,22 @@
     margin-bottom: var(--gap);
     text-align: center;
 }
+
+/* section churrascaria-funcionamento */
+
+.funcionamento {
+    padding: var(--gap-lg);
+    background: var(--color-support-2);
+}
+
+.funcionamento-title {
+    margin-bottom: var(--gap-md);
+}
+
+.funcionamento-h3 {
+    margin-bottom: var(--gap-sm);
+}
+
+.funcionamento-img {
+    margin-top: var(--gap-md);
+}
