@@ -331,7 +331,7 @@
 }
 
 .menu-item {
-    margin-bottom: var(--gap-sm);
+    margin-bottom: var(--gap);
 }
 
 .menu-item::after , .menu-item::before {
@@ -351,4 +351,14 @@
 
 .menu-item-h4 {
     margin-bottom: var(--gap);
+}
+
+.menu-img {
+    margin-bottom: calc(var(--gap-md) - var(--gap));
+    margin-top: calc(var(--gap-md) - var(--gap))
+}
+
+.menu-img-2 {
+    margin-bottom: 0;
+    margin-top: calc(var(--gap-md) - var(--gap))
 }
