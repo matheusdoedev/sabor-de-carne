@@ -383,16 +383,3 @@ h1, h2, h3, h4, h5, h6, p, a, ul {
 	font-size: 1em;
 	font-weight: normal;
 }
-
-/* grid container */
-
-.container {
-    max-width: 960px;
-}
-
-@media (max-width: 739px) {
-    .container {
-        max-width: 300px;
-        flex-direction: column;
-    }
-}

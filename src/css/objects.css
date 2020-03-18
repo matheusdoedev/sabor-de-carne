@@ -26,6 +26,29 @@
     letter-spacing: .1em;
 }
 
+@media (max-width: 768px) {
+    /* ajustes menu responsivo */
+    .nav-menu {
+        display: block;
+    }
+    
+    .nav-item {
+        display: block;
+	    padding: 0px;
+	    margin: 0px;
+	    border-top: 2px solid;
+    }
+
+    .nav-link {
+        display: block;
+	    float: none;
+	    padding: 10px;
+	    margin: 0px;
+	    border: none;
+	    min-width: 140px;
+    }
+}
+
 .nav-item:last-child .nav-link{
     padding-right: 0;
 }

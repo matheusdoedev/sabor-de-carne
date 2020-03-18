@@ -21,10 +21,12 @@
         <link rel="stylesheet" href="css/settings.css">
         <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap-grid.min.css">
         <link href="https://fonts.googleapis.com/css?family=Lato:300,400,400i|Playfair+Display:700,800,900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/tools.css">
         <link rel="stylesheet" href="css/generic.css">
         <link rel="stylesheet" href="css/elements.css">
         <link rel="stylesheet" href="css/objects.css">
         <link rel="stylesheet" href="css/components.css">
+        <link rel="stylesheet" href="css/origamid-menu.css">
         
 
     </head>
@@ -35,11 +37,11 @@
                 <!-- topo -->
                 <header class="header header-internal-pages">   
                     <div class="row">
-                        <div class="col-12 col-md-4">
+                        <div class="col-12 col-sm-4">
                             <a class="nav-brand" href="index.html"><h1>SC</h1></a>
                         </div>
-                        <nav class="col-12 col-md-8 header-nav">
-                            <ul class="nav-menu">
+                        <nav class="col-12 col-sm-8 header-nav">
+                            <ul class="nav-menu internal-nav">
                                 <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
                                 <li class="nav-item"><a class="nav-link active" href="churrascaria.html">Churrascaria</a></li>
                                 <li class="nav-item"><a class="nav-link" href="menu.html">Menu</a></li>
@@ -68,21 +70,21 @@
                 </div>
                 <div class="churrascaria-cards">
                     <div class="row">
-                        <div class="churrascaria-card col-4">
+                        <div class="churrascaria-card col-12 col-sm-4">
                             <img src="img/card-churrascaria1.jpg" alt="Homem tocando violão" class="card-img">
                             <div class="churrascaria-card-content">
                                 <h3 class="churrascaria-card-title">Som Ao vivo</h3>
                                 <p class="churrascaria-card-texto">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has</p>
                             </div>
                         </div>
-                        <div class="churrascaria-card col-4">
+                        <div class="churrascaria-card col-12 col-sm-4">
                             <img src="img/card-churrascaria2.jpg" alt="Carne na brasa" class="card-img">
                             <div class="churrascaria-card-content">
                                 <h3 class="churrascaria-card-title">Rodizio</h3>
                                 <p class="churrascaria-card-texto">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has</p>
                             </div>
                         </div>
-                        <div class="churrascaria-card col-4">
+                        <div class="churrascaria-card col-12 col-sm-4">
                             <img src="img/card-churrascaria3.jpg" alt="Vinhos" class="card-img">
                             <div class="churrascaria-card-content">
                                 <h3 class="churrascaria-card-title">Vinhos</h3>
@@ -101,12 +103,12 @@
                     <div class="col-12">
                         <h2 class="funcionamento-title">Funcionamento</h2>
                     </div>
-                    <div class="col-12 col-md-6">
+                    <div class="col-12 col-sm-6">
                         <h3 class="funcionamento-h3">Horários</h3>
                         <p>- Dias da semana: Das 7h às 23h<br>
                         - Sabados, domingos e feriados: Das 8h às 24h</p>
                     </div>
-                    <div class="col-12 col-md-6">
+                    <div class="col-12 col-sm-6">
                         <h3 class="funcionamento-h3">Onde Estamos</h3>
                         <p>- Rua Oswaldo Cruz, Rio Vermelho<br>
                             - Salvador, Bahia, Brasil</p>
@@ -123,7 +125,7 @@
         <section id="reserva" class="reserva">
             <div class="container">
                 <div class="row">
-                    <div class="offset-3 col-12 col-md-6">
+                    <div class="offset-3 col-12 col-sm-6">
                         <h2 class="reserva-title">Faça sua reserva</h2>
                         <h3 class="form-title">Preencha o formulário</h3>
                         <form action="" class="reserva-form">
@@ -155,7 +157,7 @@
         <footer class="footer">
             <div class="container">
                 <div class="row">
-                    <div class="col-12 col-md-4">
+                    <div class="col-12 col-sm-4">
                         <h3 class="footer-titles">Mapa do Site</h3>
                         <ul class="footer-nav">
                             <li class="footer-nav-item"><a class="footer-nav-link" href="index.html">Inicio</a></li>
@@ -165,7 +167,7 @@
                             <li class="footer-nav-item"><a class="footer-nav-link" href="contato.html">Contato</a></li>
                         </ul>
                     </div>
-                    <div class="col-12 col-md-4">
+                    <div class="col-12 col-sm-4">
                         <h3 class="footer-titles">Redes Sociais</h3>
                         <div class="social-medias">
                             <a class="social-medias-link" href="https://facebook.com" target="blank"><img src="img/icons/001-facebook 1.svg" alt=""></a>
@@ -173,7 +175,7 @@
                             <a class="social-medias-link" href="https://twitter.com" target="blank"><img src="img/icons/003-twitter 1.svg" alt=""></a>
                         </div>
                     </div>
-                    <div class="col-12 col-md-4">
+                    <div class="col-12 col-sm-4">
                         <h3 class="footer-titles">Contatos</h3>
                         <p class="footer-contatos">
                             - Telefone: (71) 99999 - 9999<br>
@@ -189,6 +191,11 @@
             </div>
         </footer>
         <!-- fim do footer -->
+
+        <!-- JS -->
+        <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+        <script src="js/origamid-menu.js"></script>
+        <script src="js/main.js"></script>
         
     </body>
 </html>
