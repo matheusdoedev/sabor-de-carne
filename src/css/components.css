@@ -362,3 +362,12 @@
     margin-bottom: 0;
     margin-top: calc(var(--gap-md) - var(--gap))
 }
+
+/* sobre */
+.sobre-item {
+    margin-bottom: var(--gap-md);
+}
+
+.sobre-item-title {
+    margin-bottom: var(--gap-sm);
+}
