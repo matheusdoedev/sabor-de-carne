@@ -371,3 +371,17 @@
 .sobre-item-title {
     margin-bottom: var(--gap-sm);
 }
+
+/* contatos */
+.contato-h3 {
+    margin-bottom: var(--gap-sm);
+}
+
+.contato-p {
+    line-height: 1.875em;
+    margin-bottom: var(--gap-sm);
+}
+
+.contato-img {
+    margin-top: var(--gap-md);
+}
