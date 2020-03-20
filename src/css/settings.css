@@ -12,3 +12,12 @@
     --gap-md: 64px;
     --gap-lg: 128px;
 }
+
+@media (max-width: 576px) {
+    :root {
+    /* gaps */
+    --gap-sm: 16px;
+    --gap-md: 32px;
+    --gap-lg: 64px;
+    }
+}

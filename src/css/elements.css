@@ -50,3 +50,25 @@ img {
     display: block;
 }
 
+@media (max-width: 576px) {
+    h1 {
+        font-size: 2.25em;
+    }
+    
+    h2 {
+        font-size: 1.5em;
+    }
+    
+    h3 {
+        font-size: 1.5em;
+    }
+    
+    h4 {
+        font-size: 1em;
+    }
+    
+    p, a {
+        font-size: .875em;
+    }
+}
+

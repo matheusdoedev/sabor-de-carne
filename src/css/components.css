@@ -68,6 +68,15 @@
     color: var(--color-support-1);
 }
 
+@media (max-width: 576px) {
+    .footer-titles {
+        margin-top: var(--gap-md);
+    }
+    .footer {
+        padding-top: calc(var(--gap-lg) - var(--gap-md));
+    }
+}
+
 /* main-home */
 
 .home-main {
