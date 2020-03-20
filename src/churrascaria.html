@@ -37,11 +37,11 @@
                 <!-- topo -->
                 <header class="header header-internal-pages">   
                     <div class="row">
-                        <div class="col-12 col-sm-4">
+                        <div class="col-4">
                             <a class="nav-brand" href="index.html"><h1>SC</h1></a>
                         </div>
-                        <nav class="col-12 col-sm-8 header-nav">
-                            <ul class="nav-menu internal-nav">
+                        <nav class="col-8 header-nav">
+                            <ul class="nav-menu internal-menu">
                                 <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
                                 <li class="nav-item"><a class="nav-link active" href="churrascaria.html">Churrascaria</a></li>
                                 <li class="nav-item"><a class="nav-link" href="menu.html">Menu</a></li>
@@ -103,6 +103,8 @@
                     <div class="col-12">
                         <h2 class="funcionamento-title">Funcionamento</h2>
                     </div>
+                </div>
+                <div class="row">
                     <div class="col-12 col-sm-6">
                         <h3 class="funcionamento-h3">Horários</h3>
                         <p>- Dias da semana: Das 7h às 23h<br>
@@ -113,10 +115,12 @@
                         <p>- Rua Oswaldo Cruz, Rio Vermelho<br>
                             - Salvador, Bahia, Brasil</p>
                     </div>
-                    <div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
                         <img class="funcionamento-img" src="img/funcionamento.jpg" alt="Pedaço de carne">
                     </div>
-                </div>
+                </div>               
             </div>
         </section>
         <!-- fim section - funcionamento -->
@@ -130,13 +134,13 @@
                         <h3 class="form-title">Preencha o formulário</h3>
                         <form action="" class="reserva-form">
                             <label class="reserva-label" for="name">Nome</label>
-                            <input type="text" name="name" class="reserva-input" required>
+                            <input type="text" id="name" name="name" class="reserva-input" required>
                             <label class="reserva-label" for="email">E-mail</label>
-                            <input type="email" name="email" class="reserva-input" required>
+                            <input type="email" id="email" name="email" class="reserva-input" required>
                             <label class="reserva-label" for="telefone">Telefone</label>
-                            <input type="number" name="telefone" class="reserva-input" required>
+                            <input type="number" id="telefone" name="telefone" class="reserva-input" placeholder="(DD) 99999 - 9999" required>
                             <label class="reserva-label" for="pessoas">Quantidade de pessoas</label>
-                            <input type="number" name="pessoas" class="reserva-input" max="10" maxlength="2" required>
+                            <input type="number" name="pessoas" class="reserva-input" max="10" maxlength="2" placeholder="Até 10 pessoas" required>
                             <label class="reserva-label" for="date">Data</label>
                             <input type="date" name="date" class="reserva-input" required>
                             <label class="reserva-label" for="horario">Horário</label>
@@ -195,7 +199,7 @@
         <!-- JS -->
         <script src="../node_modules/jquery/dist/jquery.min.js"></script>
         <script src="js/origamid-menu.js"></script>
-        <script src="js/main.js"></script>
+        <script src="js/main-2.js"></script>
         
     </body>
 </html>

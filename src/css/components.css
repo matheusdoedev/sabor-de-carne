@@ -272,6 +272,12 @@
     text-align: center;
 }
 
+@media (max-width: 576px) {
+    .churrascaria-card {
+        margin-bottom: var(--gap-md);
+    }
+}
+
 /* section churrascaria-funcionamento */
 
 .funcionamento {
@@ -289,6 +295,15 @@
 
 .funcionamento-img {
     margin-top: var(--gap-md);
+}
+
+@media (max-width: 576px) {
+    .funcionamento-h3 {
+        margin-top: var(--gap-md);
+    }
+    .funcionamento-title {
+        margin-bottom: 0;
+    }
 }
 
 /* section - reserva */
