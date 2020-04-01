@@ -27,6 +27,7 @@
         <link rel="stylesheet" href="css/objects.css">
         <link rel="stylesheet" href="css/components.css">
         <link rel="stylesheet" href="css/origamid-menu.css">
+        <link rel="stylesheet" href="css/simple-anime.css">
         
 
     </head>
@@ -35,7 +36,7 @@
         <main class="internal-page-main">
             <div class="container">
                 <!-- topo -->
-                <header class="header header-internal-pages">   
+                <header class="header header-internal-pages fadeInDown" data-anime="200">   
                     <div class="row">
                         <div class="col-4">
                             <a class="nav-brand" href="index.html"><h1>SC</h1></a>
@@ -62,15 +63,15 @@
             <div class="container">
                 <div class="row">
                     <div class="col-12">
-                        <h2 class="subtitle">Menu</h2>
+                        <h2 class="subtitle fadeInDown" data-anime="800">Menu</h2>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-12">
-                        <h3 class="menu-categoria">Carnes</h3>
+                        <h3 class="menu-categoria fadeInDown" data-anime="600">Carnes</h3>
                     </div>
                     <div class="col-12 col-sm-6">
-                        <ul class="menu-items">
+                        <ul class="menu-items fadeInDown" data-anime="400">
                             <li class="menu-item">
                                 <h4 class="menu-item-h4">Bovinas</h4>
                                 <p class="menu-item-p">Alcatra, Costela, Bife, Cupim</p>
@@ -82,7 +83,7 @@
                         </ul>
                     </div>
                     <div class="col-12 col-sm-6">
-                        <ul class="menu-items">
+                        <ul class="menu-items fadeInDown" data-anime="400">
                             <li class="menu-item">
                                 <h4 class="menu-item-h4">Peixes</h4>
                                 <p class="menu-item-p">Salmão, Surubim Defumado, Pescada Amarela</p>
@@ -184,6 +185,7 @@
         <!-- JS -->
         <script src="../node_modules/jquery/dist/jquery.min.js"></script>
         <script src="js/origamid-menu.js"></script>
+        <script src="js/simple-anime.js"></script>
         <script src="js/main-2.js"></script>
         
     </body>

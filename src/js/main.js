@@ -7,3 +7,6 @@ $('.nav-menu').origamidMenu({
 	background: 'var(--color-secondary)',
 	color: "white"
 });
+
+// simple-anime
+new SimpleAnime();
