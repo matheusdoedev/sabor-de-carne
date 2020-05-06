@@ -1,4 +1,8 @@
-/* fonts */
+import { createGlobalStyle } from 'styled-components';
+
+const GlobalStyle = createGlobalStyle`
+
+    /* fonts */
 
 h1,h2,h3,h4 {
     line-height: 1em;
@@ -76,3 +80,6 @@ img {
     }
 }
 
+`;
+
+export default GlobalStyle;
