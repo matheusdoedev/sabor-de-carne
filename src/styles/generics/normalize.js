@@ -60,6 +60,8 @@ const GlobalStyle = createGlobalStyle`
     
     a {
         background-color: transparent;
+        text-decoration: none;
+        padding: 10px;
     }
     
     abbr[title] {
@@ -101,7 +103,9 @@ const GlobalStyle = createGlobalStyle`
     }
     
     img {
+        display: block;
         border-style: none;
+        width: 100%;
     }
     
     button,
