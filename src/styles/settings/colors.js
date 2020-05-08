@@ -1,15 +1,13 @@
 import { createGlobalStyle } from 'styled-components';
 
 const GlobalStyle = createGlobalStyle`
-
     :root {
-        --color-primary: #EB8242;
-        --color-secondary: #B03C47;
-        --color-support-1: #FFF;
-        --color-support-2: #F5F6FA;
-        --color-support-3: #2E2D2D;
+        --color-primary: ${(props) => props.primary};
+        --color-secondary: ${(props) => props.secondary};
+        --color-support-1: ${(props) => props.support1};
+        --color-support-2: ${(props) => props.support2};
+        --color-support-3: ${(props) => props.support3};
     }
-
 `;
 
 export default GlobalStyle;

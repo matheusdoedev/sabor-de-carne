@@ -3,17 +3,17 @@ import { createGlobalStyle } from 'styled-components';
 const GlobalStyle = createGlobalStyle`
 
     :root {
-        --gap: 16px;
-        --gap-sm: 32px;
-        --gap-md: 64px;
-        --gap-lg: 128px;
+        --gap: ${(props) => props.gap};
+        --gap-sm: ${(props) => props.gapSM};
+        --gap-md: ${(props) => props.gapMD};
+        --gap-lg: ${(props) => props.gapLG};
     }
 
     @media (max-width: 576px) {
         :root {
-        --gap-sm: 16px;
-        --gap-md: 32px;
-        --gap-lg: 64px;
+        --gap-sm: var(--gap);
+        --gap-md: var(--gap-sm);
+        --gap-lg: var(--gap-md);
         }
     }
 
