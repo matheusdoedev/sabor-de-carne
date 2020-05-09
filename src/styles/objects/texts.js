@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const Title = styled.h1`
   & {
     line-height: 1em;
-    font-family: 'Playfair Display', serif;
+    font-family: var(--font-primary);
     text-transform: uppercase;
     ${(props) =>
       props.h2
@@ -25,12 +25,13 @@ export const Title = styled.h1`
         }
     `}
   }
+  ${(props) => props.style}
 `;
 
 export const SubTitle = styled.h2`
   & {
     line-height: 1em;
-    font-family: 'Playfair Display', serif;
+    font-family: var(--font-primary);
     text-transform: uppercase;
     ${(props) =>
       props.h4
@@ -53,13 +54,14 @@ export const SubTitle = styled.h2`
         }
     `}
   }
+  ${(props) => props.style}
 `;
 
 export const Paragraph = styled.p`
   & {
     max-width: 30em;
     line-height: 1.5em;
-    font-family: 'Lato', sans-serif;
+    font-family: var(--font-secondary);
     font-weight: 400;
     font-size: 0.875em;
   }
@@ -69,4 +71,5 @@ export const Paragraph = styled.p`
       max-width: 100%;
     }
   }
+  ${(props) => props.style}
 `;
