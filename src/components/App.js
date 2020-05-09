@@ -2,9 +2,10 @@ import React from 'react';
 import Routes from './routes';
 import Colors from '../styles/settings/colors';
 import Gaps from '../styles/settings/gaps';
+import Typography from '../styles/settings/typograph';
 import Reset from '../styles/generics/reset';
 import Normalize from '../styles/generics/normalize';
-import BaseElements from '../styles/base/elements;';
+import Elements from '../styles/base/elements';
 
 export default function App() {
   return (
@@ -18,8 +19,13 @@ export default function App() {
         support3="#2E2D2D"
       />
       <Gaps gap="16px" gapSM="32px" gapMD="64px" gapLG="128px" />
+      <Typography
+        fontPrimary="'Playfair Display', serif"
+        fontSecondary="'Lato', sans-serif"
+      />
       <Normalize />
       <Reset />
+      <Elements />
 
       <Routes />
     </>
