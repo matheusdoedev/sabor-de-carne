@@ -1,11 +1,8 @@
-import { createGlobalStyle } from 'styled-components';
+/* eslint-disable import/prefer-default-export */
+import styled from 'styled-components';
 
-const GlobalStyle = createGlobalStyle`
-
-    .header .row, .header {
-        align-items: center;
-    }
-
+export const HeaderWrapper = styled.header`
+  & {
+    align-items: center;
+  }
 `;
-
-export default GlobalStyle;

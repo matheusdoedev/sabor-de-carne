@@ -1,19 +1,18 @@
 import React from 'react';
 import { Col, Row } from 'react-bootstrap';
-
 import { NavBrand, NavItem, NavLink, NavMenu } from '../../styles/objects/nav';
-import './styles';
+import { HeaderWrapper } from './styles';
 
 export default function Header() {
   return (
     // eslint-disable-next-line react/jsx-filename-extension
-    <header className="header header-home fadeInDown" data-anime="200">
+    <HeaderWrapper>
       <Row>
         <Col xs="4">
           <NavBrand>SC</NavBrand>
         </Col>
         <Col xs="8">
-          <nav className="col-8 header-nav">
+          <nav>
             <NavMenu>
               <NavItem>
                 <NavLink to="/">Inicio</NavLink>
@@ -34,6 +33,6 @@ export default function Header() {
           </nav>
         </Col>
       </Row>
-    </header>
+    </HeaderWrapper>
   );
 }
