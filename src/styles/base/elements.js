@@ -3,7 +3,7 @@ import { createGlobalStyle } from 'styled-components';
 const GlobalStyle = createGlobalStyle`
     a, label, input, button {
         line-height: 1.5em;
-        font-family: 'Lato', sans-serif;
+        font-family: var(--font-secondary);
         font-weight: 400;
         font-size: .875em;
     }

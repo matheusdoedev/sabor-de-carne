@@ -9,7 +9,7 @@ export const Button = styled.a`
     letter-spacing: 0.1em;
     background-color: ${(props) =>
       props.primary ? 'var(--color-secondary)' : 'var(--color-primary)'};
-    color: {(props) => props.color};
+    color: ${(props) => props.color};
     transition: filter 0.2s;
     -webkit-transition: filter 0.2s;
     -moz-transition: filter 0.2s;
@@ -28,7 +28,7 @@ export const Button = styled.a`
 
   @media (max-width: 576px) {
     .sobre-home .btn {
-        margin-bottom: var(--gap-md);
+      margin-bottom: var(--gap-md);
     }
   }
 `;

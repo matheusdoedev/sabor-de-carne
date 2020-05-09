@@ -2,9 +2,9 @@ import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 
 export const NavBrand = styled(Link)`
-    & {
-        color: {(props) => props.color};
-    }
+  & {
+    color: ${(props) => props.color};
+  }
 `;
 
 export const NavMenu = styled.ul`
@@ -22,7 +22,7 @@ export const NavMenu = styled.ul`
 
 export const NavItem = styled.li`
   & {
-    display: inline;
+    display: ${(props) => (props.verticalNav ? `inline` : `block`)};
     text-transform: uppercase;
     letter-spacing: 0.1em;
   }
