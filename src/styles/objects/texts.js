@@ -33,6 +33,8 @@ export const SubTitle = styled.h2`
     line-height: 1em;
     font-family: var(--font-primary);
     text-transform: uppercase;
+    margin-bottom: var(--gap-sm);
+    color: ${(props) => props.color};
     ${(props) =>
       props.h4
         ? `
@@ -71,5 +73,4 @@ export const Paragraph = styled.p`
       max-width: 100%;
     }
   }
-  ${(props) => props.style}
 `;

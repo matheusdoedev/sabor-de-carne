@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 export const NavBrand = styled(Link)`
   & {
     color: ${(props) => props.color};
+    font-size: 2.25rem;
   }
 `;
 
@@ -22,7 +23,7 @@ export const NavMenu = styled.ul`
 
 export const NavItem = styled.li`
   & {
-    display: ${(props) => (props.verticalNav ? `inline` : `block`)};
+    display: inline;
     text-transform: uppercase;
     letter-spacing: 0.1em;
   }
@@ -46,6 +47,10 @@ export const NavItem = styled.li`
 `;
 
 export const NavLink = styled(Link)`
+  & {
+    text-decoration: none !important;
+  }
+
   @media (max-width: 768px) {
     & {
       display: block;
