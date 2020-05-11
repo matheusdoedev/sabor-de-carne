@@ -28,6 +28,23 @@ export default function App() {
       <Elements />
 
       <Routes />
+
+      <script
+        src="https://unpkg.com/react/umd/react.production.min.js"
+        crossOrigin
+      />
+
+      <script
+        src="https://unpkg.com/react-dom/umd/react-dom.production.min.js"
+        crossOrigin
+      />
+
+      <script
+        src="https://unpkg.com/react-bootstrap@next/dist/react-bootstrap.min.js"
+        crossOrigin
+      />
+
+      <script>var Alert = ReactBootstrap.Alert;</script>
     </>
   );
 }
