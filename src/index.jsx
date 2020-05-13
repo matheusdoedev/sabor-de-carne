@@ -1,0 +1,7 @@
+import React from 'react';
+import ReactDOM from 'react-dom';
+
+import App from './components/App';
+
+// eslint-disable-next-line react/jsx-filename-extension
+ReactDOM.hydrate(<App />, document.getElementById('mountNode'));
