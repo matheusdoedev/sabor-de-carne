@@ -1,71 +1,70 @@
-<h1 style="font-size: 48px; line-height: 58px;">Sabor de Carne</h1>
+# Sabor de Carne
+> Short blurb about what your product does.
 
-<img src="readme-img/capa.png" alt="">
+[![NPM Version][npm-image]][npm-url]
+[![Build Status][travis-image]][travis-url]
+[![Downloads Stats][npm-downloads]][npm-url]
 
-<h2 style="font-size: 36px; line-height: 46px;">About</h2>
+Website institucional da churrascaria Sabor de Carne.
 
-<h3 style="font-size: 24px; line-height: 34px;">Goal</h3>
-<p style="font-size: 14px; max-width: 30em; line-height: 1.5em; opacity: .7;">
-    O site institucional Sabor de Carne tem o objetivo de divulgar os serviços que a Churrascaria tem a oferecer, bem como informar sobre ela, valores, contato, e o menu.
-</p>
+![](header.png)
 
-<h3 style="font-size: 24px; line-height: 34px;">Project</h3>
-<p style="font-size: 14px; max-width: 30em; line-height: 1.5em; opacity: .7;">
-    O projeto consistiu na criação de uma landing page, com pré etapas de plajenamento, branding, pré-design (Wireframe), ui e prototipação (Moodboard, Definição de Linguagem Visual, Layout e Prototipo) e por fim desenvolvimento (HTML,CSS,JS,Design Responsivo,Otimização,Validação W3C,SEO e Acessibilidade).
-</p>
+## Get started
 
-<h3 style="font-size: 24px; line-height: 34px;">Technologies</h3>
-<ul>
-    <li><a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML">HTML</a></li>
-    <li><a href="https://developer.mozilla.org/pt-BR/docs/Web/CSS">CSS</a></li>
-    <li><a href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript">JavaScript</a></li>
-    <li><a href="https://gulpjs.com">Gulp</a></li>
-    <li><a href="https://getbootstrap.com">Bootstrap</a></li>
-    <li><a href="https://www.npmjs.com">NPM</a></li>
-    <li><a href="https://jquery.com">Jquery</a></li>
-    <li><a href="https://git-scm.com">Git</a></li>
-</ul>
+```sh
+npm run start
+```
 
-<h3 style="font-size: 24px; line-height: 34px;">Skills</h3>
-<ul>
-    <li>Naming</li>
-    <li>Branding</li>
-    <li>Wireframe</li>
-    <li>Moodboard</li>
-    <li>UI</li>
-    <li>Prototype</li>
-    <li>Responsive Design</li>
-    <li>SEO</li>
-    <li>GH-Pages</li>
-    <li>Front End</li>
-</ul>
+## Usage example
 
-<h3 style="font-size: 24px; line-height: 34px;">Tools</h3>
-<ul>
-    <li>Figma</li>
-    <li>Notion</li>
-    <li>Trello</li>
-</ul>
+A few motivating and useful examples of how your product can be used. Spice this up with code blocks and potentially more screenshots.
 
-<h3 style="font-size: 24px; line-height: 34px;">Authors</h3>
-<ul>
-    <li><a href="https://www.linkedin.com/in/matheusdoe-dev/">Matheus do É Santos</a>: Front End Developer | Web Designer</li>
-</ul>
+_For more examples and usage, please refer to the [Wiki][wiki]._
 
-<h3>Screenshots</h3>
+## Development setup
 
-<img src="readme-img/map-content.jpg" alt=""><br>
+Describe how to install all development dependencies and how to run an automated test-suite of some kind. Potentially do this for multiple platforms.
 
-<img src="readme-img/moodboard.jpg" alt=""><br>
+```sh
+make install
+npm test
+```
 
-<img src="readme-img/wireframes.png" alt=""><br>
+## Release History
 
-<img src="public/home.jpg" alt=""><br>
+* 0.2.1
+    * CHANGE: Update docs (module code remains unchanged)
+* 0.2.0
+    * CHANGE: Remove `setDefaultXYZ()`
+    * ADD: Add `init()`
+* 0.1.1
+    * FIX: Crash when calling `baz()` (Thanks @GenerousContributorName!)
+* 0.1.0
+    * The first proper release
+    * CHANGE: Rename `foo()` to `bar()`
+* 0.0.1
+    * Work in progress
 
-<img src="public/churrascaria.jpg" alt=""><br>
+## Meta
 
-<img src="public/menu.jpg" alt=""><br>
+Your Name – [@YourTwitter](https://twitter.com/dbader_org) – YourEmail@example.com
 
-<img src="public/sobre.jpg" alt=""><br>
+Distributed under the XYZ license. See ``LICENSE`` for more information.
 
-<img src="public/contato.jpg" alt=""><br>
+[https://github.com/yourname/github-link](https://github.com/dbader/)
+
+## Contributing
+
+1. Fork it (<https://github.com/yourname/yourproject/fork>)
+2. Create your feature branch (`git checkout -b feature/fooBar`)
+3. Commit your changes (`git commit -am 'Add some fooBar'`)
+4. Push to the branch (`git push origin feature/fooBar`)
+5. Create a new Pull Request
+
+<!-- Markdown link & img dfn's -->
+[npm-image]: https://img.shields.io/npm/v/datadog-metrics.svg?style=flat-square
+[npm-url]: https://npmjs.org/package/datadog-metrics
+[npm-downloads]: https://img.shields.io/npm/dm/datadog-metrics.svg?style=flat-square
+[travis-image]: https://img.shields.io/travis/dbader/node-datadog-metrics/master.svg?style=flat-square
+[travis-url]: https://travis-ci.org/dbader/node-datadog-metrics
+[wiki]: https://github.com/yourname/yourproject/wiki
