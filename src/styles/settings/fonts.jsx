@@ -1,10 +1,10 @@
-import { createGlobalStyle } from 'styled-components';
+import { createGlobalStyle } from "styled-components";
 
 const GlobalStyle = createGlobalStyle`
 
     :root {
-        --font-primary: ${(props) => props.fontPrimary};
-        --font-secondary: ${(props) => props.fontSecondary}
+        --font-primary: 'Playfair Display', Georgia, serif;
+        --font-secondary: Lato, Helvetica, Arial, sans-serif;
     }
 
 

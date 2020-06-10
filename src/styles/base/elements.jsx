@@ -6,12 +6,44 @@ const GlobalStyle = createGlobalStyle`
         font-family: var(--font-primary);
         text-transform: uppercase;
     }
+
+    h1 {
+        font-size: 3rem
+    }
     
-    a, label, input, button {
+    h2 {
+        font-size: 2.25rem
+    }
+
+    h3 {
+        font-size: 1.5rem;
+    }
+
+    a {
+        padding: .625rem;
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: none;
+        }
+    }
+
+    p, label, input, a, button  {
         line-height: 1.5em;
-        font-family: var(--font-secondary);
         font-weight: 400;
-        font-size: .875em;
+        font-family: var(--font-secondary);
+
+        @media (max-width: 576px) {
+            max-width: 100%;
+        }    
+    }
+    
+    p, label, input {
+        font-size: 1rem;   
+    }
+
+    button, a {
+        font-size: 1.125rem
     }
 
     @media (max-width: 576px) {
@@ -19,10 +51,6 @@ const GlobalStyle = createGlobalStyle`
             font-size: .875em;
             max-width: 100%;
         }
-    }
-
-    section {
-        padding: var(--gap-lg);
     }
 `;
 

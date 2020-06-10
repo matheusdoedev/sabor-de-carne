@@ -1,29 +1,33 @@
-/* eslint-disable import/prefer-default-export */
-import styled from 'styled-components';
+import { Link } from "gatsby";
+import styled from "styled-components";
 
-export const Button = styled.a`
+export const Button = styled(Link)`
   & {
-    display: inline-block;
+    display: block;
+    max-width: 16rem;
+    text-decoration: none;
     padding: 10px 25px 10px 25px;
     text-transform: uppercase;
     letter-spacing: 0.1em;
+    border-radius: 4px;
     background-color: ${(props) =>
-      props.primary ? 'var(--color-secondary)' : 'var(--color-primary)'};
-    color: ${(props) => props.color};
+      props.primary ? "var(--secondary-color)" : "var(--base-color)"};
+    color: var(--support-color-1);
     transition: filter 0.2s;
     -webkit-transition: filter 0.2s;
     -moz-transition: filter 0.2s;
     -ms-transition: filter 0.2s;
     -o-transition: filter 0.2s;
-  }
 
-  &:hover {
-    filter: brightness(80%);
-    transition: filter 0.2s;
-    -webkit-transition: filter 0.2s;
-    -moz-transition: filter 0.2s;
-    -ms-transition: filter 0.2s;
-    -o-transition: filter 0.2s;
+    &:hover {
+      filter: brightness(80%);
+      color: var(--support-color-1);
+      transition: filter 0.2s;
+      -webkit-transition: filter 0.2s;
+      -moz-transition: filter 0.2s;
+      -ms-transition: filter 0.2s;
+      -o-transition: filter 0.2s;
+    }
   }
 
   @media (max-width: 576px) {
