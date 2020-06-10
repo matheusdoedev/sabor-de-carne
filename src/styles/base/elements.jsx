@@ -1,6 +1,12 @@
-import { createGlobalStyle } from 'styled-components';
+import { createGlobalStyle } from "styled-components";
 
 const GlobalStyle = createGlobalStyle`
+    h1,h2,h3,h4,h5,h6 {
+        line-height: 1em;
+        font-family: var(--font-primary);
+        text-transform: uppercase;
+    }
+    
     a, label, input, button {
         line-height: 1.5em;
         font-family: var(--font-secondary);

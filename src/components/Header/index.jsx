@@ -1,38 +1,46 @@
-import React from 'react';
-import { Col, Row } from 'react-bootstrap';
-import { NavBrand, NavItem, NavLink, NavMenu } from '../../styles/objects/nav';
-import { HeaderWrapper } from './styles';
+import PropTypes from "prop-types";
+import React from "react";
+import { NavBrand, NavLink, NavItem, NavMenu } from "../../styles/objects/nav";
+import { Row, Col } from "react-bootstrap";
+import { HeaderWrapper } from "./styles";
 
-export default function Header() {
+const Header = ({ siteTitle }) => {
   return (
-    // eslint-disable-next-line react/jsx-filename-extension
     <HeaderWrapper>
       <Row>
         <Col xs="4">
-          <NavBrand>SC</NavBrand>
+          <NavBrand to="/">SC</NavBrand>
         </Col>
         <Col xs="8">
-          <nav>
-            <NavMenu>
-              <NavItem>
-                <NavLink to="/">Inicio</NavLink>
-              </NavItem>
-              <NavItem>
-                <NavLink to="/">Churrascaria</NavLink>
-              </NavItem>
-              <NavItem>
-                <NavLink to="/">Menu</NavLink>
-              </NavItem>
-              <NavItem>
-                <NavLink to="/">Sobre</NavLink>
-              </NavItem>
-              <NavItem>
-                <NavLink to="/">Contato</NavLink>
-              </NavItem>
-            </NavMenu>
-          </nav>
+          <NavMenu>
+            <NavItem>
+              <NavLink to="/">Inicio</NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink to="/">Churrascaria</NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink to="/">Menu</NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink to="/">Sobre</NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink to="/">Contato</NavLink>
+            </NavItem>
+          </NavMenu>
         </Col>
       </Row>
     </HeaderWrapper>
   );
-}
+};
+
+Header.propTypes = {
+  siteTitle: PropTypes.string,
+};
+
+Header.defaultProps = {
+  siteTitle: ``,
+};
+
+export default Header;
