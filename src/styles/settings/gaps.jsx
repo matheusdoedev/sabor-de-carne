@@ -1,12 +1,13 @@
-import { createGlobalStyle } from 'styled-components';
+import { createGlobalStyle } from "styled-components";
 
 const GlobalStyle = createGlobalStyle`
 
     :root {
-        --gap: ${(props) => props.gap};
-        --gap-sm: ${(props) => props.gapSM};
-        --gap-md: ${(props) => props.gapMD};
-        --gap-lg: ${(props) => props.gapLG};
+        --gap: 1rem;
+        --gap-sm: 1.5625rem;
+        --gap-md: 2.5625rem;
+        --gap-lg: 4.1875rem;
+        --gap-xl: 6.8125rem;
     }
 
     @media (max-width: 576px) {
