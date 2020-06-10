@@ -1,17 +1,23 @@
 import PropTypes from "prop-types";
 import React from "react";
-import { NavBrand, NavLink, NavItem, NavMenu } from "../../styles/objects/nav";
 import { Row, Col } from "react-bootstrap";
-import { HeaderWrapper } from "./styles";
+import {
+  HeaderWrapper,
+  NavBrand,
+  Nav,
+  NavMenu,
+  NavItem,
+  NavLink,
+} from "./styles";
 
 const Header = ({ siteTitle }) => {
   return (
     <HeaderWrapper>
-      <Row>
-        <Col xs="4">
-          <NavBrand to="/">SC</NavBrand>
-        </Col>
-        <Col xs="8">
+      <Col xs="4">
+        <NavBrand to="/">SC</NavBrand>
+      </Col>
+      <Col xs="8">
+        <Nav>
           <NavMenu>
             <NavItem>
               <NavLink to="/">Inicio</NavLink>
@@ -29,8 +35,8 @@ const Header = ({ siteTitle }) => {
               <NavLink to="/">Contato</NavLink>
             </NavItem>
           </NavMenu>
-        </Col>
-      </Row>
+        </Nav>
+      </Col>
     </HeaderWrapper>
   );
 };
