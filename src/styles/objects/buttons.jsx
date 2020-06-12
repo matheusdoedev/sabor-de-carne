@@ -4,15 +4,16 @@ import styled from "styled-components";
 export const Button = styled(Link)`
   & {
     display: block;
-    max-width: 16rem;
     text-decoration: none;
+    text-align: center;
+    color: var(--support-color-1) !important;
+    cursor: pointer;
     padding: 10px 25px 10px 25px;
     text-transform: uppercase;
     letter-spacing: 0.1em;
     border-radius: 4px;
     background-color: ${(props) =>
       props.primary ? "var(--secondary-color)" : "var(--base-color)"};
-    color: var(--support-color-1);
     transition: filter 0.2s;
     -webkit-transition: filter 0.2s;
     -moz-transition: filter 0.2s;
