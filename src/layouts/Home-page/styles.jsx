@@ -37,7 +37,7 @@ export const TagLine = styled.p`
 
 export const CtaButton = styled(Button)`
   & {
+    max-width: 300px;
     margin: var(--gap-lg) auto 0 auto;
-    text-align: center;
   }
 `;

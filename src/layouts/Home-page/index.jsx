@@ -1,32 +1,21 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { useStaticQuery, graphql } from "gatsby";
 import { Container, Row, Col } from "react-bootstrap";
 import Styles from "../../styles/main";
-import Header from "../../components/Header/index";
+import Header from "../../components/Header-home/index";
 import Footer from "../../components/Footer/index";
 import { Hero, Title, TagLine, CtaButton } from "./styles";
 
 // styles
 
-const Layout = ({ children }) => {
-  const data = useStaticQuery(graphql`
-    query SiteTitleQuery {
-      site {
-        siteMetadata {
-          title
-        }
-      }
-    }
-  `);
-
+const Home = ({ children }) => {
   return (
     <>
       <Styles />
 
       <Hero>
         <Container>
-          <Header siteTitle={data.site.siteMetadata.title} />
+          <Header />
           <Row>
             <Col xs="12">
               <Title>Sabor de Carne</Title>
@@ -47,8 +36,8 @@ const Layout = ({ children }) => {
   );
 };
 
-Layout.propTypes = {
+Home.propTypes = {
   children: PropTypes.node.isRequired,
 };
 
-export default Layout;
+export default Home;
