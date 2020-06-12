@@ -1,4 +1,3 @@
-import PropTypes from "prop-types";
 import React from "react";
 import { Row, Col } from "react-bootstrap";
 import {
@@ -10,43 +9,47 @@ import {
   NavLink,
 } from "./styles";
 
-const Header = ({ siteTitle }) => {
+const Header = ({ page }) => {
   return (
     <HeaderWrapper>
       <Col xs="4">
-        <NavBrand to="/">SC</NavBrand>
+        <NavBrand to="/" {...page}>
+          SC
+        </NavBrand>
       </Col>
       <Col xs="8">
         <Nav>
           <NavMenu>
             <NavItem>
-              <NavLink to="/">Inicio</NavLink>
+              <NavLink to="/" {...page}>
+                Inicio
+              </NavLink>
             </NavItem>
             <NavItem>
-              <NavLink to="/">Churrascaria</NavLink>
+              <NavLink to="/churrascaria" {...page}>
+                Churrascaria
+              </NavLink>
             </NavItem>
             <NavItem>
-              <NavLink to="/">Menu</NavLink>
+              <NavLink to="/" {...page}>
+                Menu
+              </NavLink>
             </NavItem>
             <NavItem>
-              <NavLink to="/">Sobre</NavLink>
+              <NavLink to="/" {...page}>
+                Sobre
+              </NavLink>
             </NavItem>
             <NavItem>
-              <NavLink to="/">Contato</NavLink>
+              <NavLink to="/" {...page}>
+                Contato
+              </NavLink>
             </NavItem>
           </NavMenu>
         </Nav>
       </Col>
     </HeaderWrapper>
   );
-};
-
-Header.propTypes = {
-  siteTitle: PropTypes.string,
-};
-
-Header.defaultProps = {
-  siteTitle: ``,
 };
 
 export default Header;

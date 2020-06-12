@@ -20,10 +20,10 @@ export const NavBrand = styled(Link)`
     align-self: center;
     opacity: 90%;
     transition: 0.2s;
-    color: var(--base-color);
+    color: var(--support-color-1);
 
     &:hover {
-      color: var(--secondary-color);
+      color: var(--base-color);
       transition: 0.2s;
     }
   }
@@ -81,10 +81,10 @@ export const NavLink = styled(Link)`
     font-size: 1rem;
     color: var(--support-color-1);
     transition: 0.2s;
-    color: var(--base-color);
 
     &:hover {
-      color: var(--secondary-color);
+      color: var(--base-color);
+      transition: 0.2s;
     }
 
     @media (max-width: 768px) {
