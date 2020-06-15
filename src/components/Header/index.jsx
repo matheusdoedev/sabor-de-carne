@@ -1,5 +1,5 @@
 import React from "react";
-import { Row, Col } from "react-bootstrap";
+import { Row, Col, Container } from "react-bootstrap";
 import {
   HeaderWrapper,
   NavBrand,
@@ -9,45 +9,37 @@ import {
   NavLink,
 } from "./styles";
 
-const Header = ({ page }) => {
+const Header = () => {
   return (
     <HeaderWrapper>
-      <Col xs="4">
-        <NavBrand to="/" {...page}>
-          SC
-        </NavBrand>
-      </Col>
-      <Col xs="8">
-        <Nav>
-          <NavMenu>
-            <NavItem>
-              <NavLink to="/" {...page}>
-                Inicio
-              </NavLink>
-            </NavItem>
-            <NavItem>
-              <NavLink to="/churrascaria" {...page}>
-                Churrascaria
-              </NavLink>
-            </NavItem>
-            <NavItem>
-              <NavLink to="/" {...page}>
-                Menu
-              </NavLink>
-            </NavItem>
-            <NavItem>
-              <NavLink to="/" {...page}>
-                Sobre
-              </NavLink>
-            </NavItem>
-            <NavItem>
-              <NavLink to="/" {...page}>
-                Contato
-              </NavLink>
-            </NavItem>
-          </NavMenu>
-        </Nav>
-      </Col>
+      <Container>
+        <Row>
+          <Col xs="4">
+            <NavBrand to="/">SC</NavBrand>
+          </Col>
+          <Col xs="8" style={{ alignSelf: "center" }}>
+            <Nav>
+              <NavMenu>
+                <NavItem>
+                  <NavLink to="/">Inicio</NavLink>
+                </NavItem>
+                <NavItem>
+                  <NavLink to="/churrascaria">Churrascaria</NavLink>
+                </NavItem>
+                <NavItem>
+                  <NavLink to="/menu">Menu</NavLink>
+                </NavItem>
+                <NavItem>
+                  <NavLink to="/sobre">Sobre</NavLink>
+                </NavItem>
+                <NavItem>
+                  <NavLink to="/contato">Contato</NavLink>
+                </NavItem>
+              </NavMenu>
+            </Nav>
+          </Col>
+        </Row>
+      </Container>
     </HeaderWrapper>
   );
 };

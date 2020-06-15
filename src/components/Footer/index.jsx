@@ -13,19 +13,19 @@ const Footer = () => (
           <SiteMap>
             <ul>
               <li>
-                <Link href="/">Inicio</Link>
+                <Link to="/">Inicio</Link>
               </li>
               <li>
-                <Link href="/churrascaria">Churrascaria</Link>
+                <Link to="/churrascaria">Churrascaria</Link>
               </li>
               <li>
-                <Link href="#">Menu</Link>
+                <Link to="/menu">Menu</Link>
               </li>
               <li>
-                <Link href="#">Sobre</Link>
+                <Link to="/sobre">Sobre</Link>
               </li>
               <li>
-                <Link href="#">Contato</Link>
+                <Link to="/contato">Contato</Link>
               </li>
             </ul>
           </SiteMap>

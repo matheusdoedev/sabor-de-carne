@@ -3,12 +3,10 @@ import { Link } from "gatsby";
 
 export const HeaderWrapper = styled.header`
   & {
-    display: flex;
-    flex-wrap: wrap;
-    margin-right: -15px;
-    margin-left: -15px;
     align-items: center;
     padding: var(--gap) 0;
+    box-shadow: -2px 2px 2px rgba(0, 0, 0, 0.25),
+      0px 4px 4px rgba(0, 0, 0, 0.25);
   }
 `;
 
