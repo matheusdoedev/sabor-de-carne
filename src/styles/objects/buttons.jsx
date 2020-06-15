@@ -41,13 +41,7 @@ export const Button = styled(Link)`
 export const SubmitButton = styled.button`
   & {
     border: none;
-    background: var(--color-support-1);
-    color: var(--color-support-3);
+    border-radius: 4px;
     cursor: pointer;
-  }
-
-  &:hover {
-    background: var(--color-primary);
-    color: var(--color-support-1);
   }
 `;

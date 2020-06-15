@@ -28,7 +28,7 @@ const GlobalStyle = createGlobalStyle`
         }
     }
 
-    p, label, input, a, button  {
+    p, label, input, a, button, textarea  {
         line-height: 1.5em;
         font-weight: 400;
         font-family: var(--font-secondary);
