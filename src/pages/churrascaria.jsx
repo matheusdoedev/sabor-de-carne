@@ -3,69 +3,80 @@ import { Container, Row, Col } from "react-bootstrap";
 import Layout from "../layouts/Page/index";
 import SEO from "../components/Seo/index";
 import FormReserva from "../components/Reserva/index";
+import PageTitle from "../components/Page-title/index";
+import {
+  FuncionamentoWrapper,
+  FeaturesWrapper,
+  FeatureInfo,
+} from "../styles/pages/churrascaria";
 
 // imgs
-import CapaImg from "../assets/capa-menu";
-import Menu1Img from "../assets/menu1";
-import Menu2Img from "../assets/menu2";
-import Menu3Img from "../assets/menu3";
+import CapaChurrascaria from "../assets/capa-churrascaria";
+import FooterChurrascaria from "../assets/footer-churrascaria";
+import Card1Img from "../assets/card-churrascaria1";
+import Card2Img from "../assets/card-churrascaria2";
+import Card3Img from "../assets/card-churrascaria3";
+import FuncionamentoImg from "../assets/funcionamento";
 
 const Churrascaria = () => (
   <Layout>
     <SEO title="Churrascaria" />
+    <CapaChurrascaria />
 
     <div>
       <Container>
         <Row>
-          <h2>Churrascaria</h2>
-          <p>
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy text
-            ever since the 1500s, when an unknown printer took a galley of type
-            and scrambled it to{" "}
-          </p>
+          <Col xs="12">
+            <PageTitle
+              title="Churrascaria"
+              subtitle="Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s, when an unknown printer took a galley of
+              type and scrambled it to"
+            />
+          </Col>
         </Row>
       </Container>
     </div>
 
-    <section>
+    <FeaturesWrapper>
       <Container>
         <Row>
           <Col xs="12" sm="4">
-            <Menu1Img />
-            <div>
+            <Card1Img />
+            <FeatureInfo>
               <h3>Som ao vivo</h3>
               <p>
                 Lorem Ipsum is simply dummy text of the printing and typesetting
                 industry. Lorem Ipsum has
               </p>
-            </div>
+            </FeatureInfo>
           </Col>
           <Col xs="12" sm="4">
-            <Menu2Img />
-            <div>
-              <h3>Som ao vivo</h3>
+            <Card2Img />
+            <FeatureInfo>
+              <h3>Rodizio</h3>
               <p>
                 Lorem Ipsum is simply dummy text of the printing and typesetting
                 industry. Lorem Ipsum has
               </p>
-            </div>
+            </FeatureInfo>
           </Col>
           <Col xs="12" sm="4">
-            <Menu3Img />
-            <div>
-              <h3>Som ao vivo</h3>
+            <Card3Img />
+            <FeatureInfo>
+              <h3>Vinhos</h3>
               <p>
                 Lorem Ipsum is simply dummy text of the printing and typesetting
                 industry. Lorem Ipsum has
               </p>
-            </div>
+            </FeatureInfo>
           </Col>
         </Row>
       </Container>
-    </section>
+    </FeaturesWrapper>
 
-    <section>
+    <FuncionamentoWrapper>
       <Container>
         <Row>
           <Col xs="12">
@@ -88,10 +99,17 @@ const Churrascaria = () => (
             </ul>
           </Col>
         </Row>
+        <Row>
+          <Col xs="12">
+            <FuncionamentoImg />
+          </Col>
+        </Row>
       </Container>
-    </section>
+    </FuncionamentoWrapper>
 
     <FormReserva />
+
+    <FooterChurrascaria />
   </Layout>
 );
 
