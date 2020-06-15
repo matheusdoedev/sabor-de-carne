@@ -12,9 +12,7 @@ const Page = ({ children }) => {
     <>
       <Styles />
 
-      <Container>
-        <Header />
-      </Container>
+      <Header />
       <main>{children}</main>
       <Footer />
     </>
