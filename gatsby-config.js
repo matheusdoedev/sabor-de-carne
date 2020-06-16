@@ -1,11 +1,13 @@
 module.exports = {
   siteMetadata: {
     title: `Sabor de Carne`,
-    description: `Churrascaria, Restaurante, Sabor de Carne, Carne, `,
+    description: `Churrascaria Sabor de Carne`,
     author: `@Matheusdoe-dev`,
+    keywords: `Churrascaria, Carne, Churrasco, Rodizio, Sabor, Salvador, Bahia, Rio Vermelho, Comida, Restaurante, Som Ao Vivo, Peixes, Cordeiro, Porco, Bovinas, Salada, Caprese, Grega, Vinhos, Bebidas`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-styled-components`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -18,13 +20,13 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `sabor-de-carne`,
+        short_name: `sabor-de-carne`,
         start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
+        background_color: `#FFFFFF`,
+        theme_color: `#EB8242`,
         display: `minimal-ui`,
-        icon: `src/assets/img/favicon/brand.png`, // This path is relative to the root of the site.
+        icon: `src/assets/img/icons/brand.svg`,
       },
     },
   ],
