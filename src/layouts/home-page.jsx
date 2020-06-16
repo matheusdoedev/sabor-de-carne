@@ -1,26 +1,26 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { Container, Row, Col } from "react-bootstrap";
-import Styles from "../../styles/main";
-import Header from "../../components/Header/index";
+// components
 import Footer from "../../components/Footer/index";
+import Hero from "../../components/Hero/index";
 
 // styles
+import Styles from "./../../styles/main";
 
-const Page = ({ children }) => {
+const Home = ({ children }) => {
   return (
     <>
       <Styles />
 
-      <Header />
+      <Hero />
       <main>{children}</main>
       <Footer />
     </>
   );
 };
 
-Page.propTypes = {
+Home.propTypes = {
   children: PropTypes.node.isRequired,
 };
 
-export default Page;
+export default Home;
