@@ -18,6 +18,7 @@ export const ContatoWrapper = styled.div`
 
     li {
       margin-bottom: calc(var(--gap) / 2);
+      opacity: 80%;
     }
   }
 `;

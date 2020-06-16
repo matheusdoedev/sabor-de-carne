@@ -28,7 +28,7 @@ const GlobalStyle = createGlobalStyle`
         }
     }
 
-    p, label, input, a, button, textarea  {
+    p, label, input, a, button, textarea, li  {
         line-height: 1.5em;
         font-weight: 400;
         font-family: var(--font-secondary);
@@ -38,12 +38,14 @@ const GlobalStyle = createGlobalStyle`
         }    
     }
     
-    p, label, input {
-        font-size: 1rem;   
+    p, label, input, li {
+        font-size: 1rem;  
+        opacity: 80%; 
     }
 
     button, a {
-        font-size: 1.125rem
+        font-size: 1.125rem;
+        opacity: 90%;
     }
 
     @media (max-width: 576px) {

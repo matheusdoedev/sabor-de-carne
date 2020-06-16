@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { Button } from "../objects/buttons";
 
 export const FuncionamentoWrapper = styled.section`
   & {
