@@ -1,9 +1,9 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "sabor-de-carne",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "description": "Site institucional Sabor de Carne",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "@Matheusdoe-dev",
   "dependencies": {
     "@types/styled-components": "^5.1.0",
     "babel-plugin-styled-components": "^1.10.7",
@@ -15,6 +15,7 @@
     "gatsby-plugin-offline": "^3.2.7",
     "gatsby-plugin-react-helmet": "^3.3.2",
     "gatsby-plugin-sharp": "^2.6.9",
+    "gatsby-plugin-styled-components": "^3.3.4",
     "gatsby-source-filesystem": "^2.3.8",
     "gatsby-transformer-sharp": "^2.5.3",
     "jquery": "^3.5.1",
@@ -44,9 +45,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+    "url": "https://github.com/Matheusdoe-dev/Sabor-de-Carne"
   },
   "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+    "url": "https://github.com/Matheusdoe-dev/Sabor-de-Carne/issues"
   }
 }
