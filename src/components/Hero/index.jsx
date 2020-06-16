@@ -12,19 +12,23 @@ import {
   Hero,
   TagLine,
   Title,
+  MobileMenu,
 } from "./styles";
+// scripts
+import menuMobile from "../../scripts/menu-mobile";
 
 const Header = () => {
   return (
     <Hero>
       <Container>
         <HeaderWrapper>
-          <Col xs="4">
+          <Col xs="8" lg="4">
             <NavBrand to="/">SC</NavBrand>
           </Col>
-          <Col xs="8">
+          <Col xs="4" lg="8">
             <Nav>
-              <NavMenu>
+              <MobileMenu onClick={menuMobile}></MobileMenu>
+              <NavMenu data-anime="menu-mobile">
                 <NavItem>
                   <NavLink to="/">Inicio</NavLink>
                 </NavItem>
