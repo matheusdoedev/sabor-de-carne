@@ -1,4 +1,5 @@
 import React from "react";
+// components
 import { Container, Col, Row } from "react-bootstrap";
 import { FormWrapper, ReservarBtn } from "./styles";
 

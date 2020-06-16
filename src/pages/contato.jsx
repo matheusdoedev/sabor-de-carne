@@ -1,16 +1,19 @@
 import React from "react";
+// components
 import { Container, Row, Col } from "react-bootstrap";
-import Layout from "../layouts/Page/index";
+import Layout from "../layouts/page";
 import SEO from "../components/Seo/index";
 import PageTitle from "../components/Page-title/index";
+// styles
 import { ContatoWrapper } from "../styles/pages/contato";
 // imgs
 import CapaContato from "../assets/capa-sobre";
 import FooterContato from "../assets/footer-sobre";
+import MapaImg from "../assets/mapa";
 
 const Contato = () => (
   <Layout>
-    <SEO title="Contato" />
+    <SEO title="Contato" description="Veja nossos contatos" />
     <CapaContato />
 
     <div>
@@ -45,6 +48,11 @@ const Contato = () => (
               <li>- Telefone: (71) 99999 - 9999</li>
               <li>- Email: contato@sabordecarne.com.br</li>
             </ul>
+          </Col>
+        </Row>
+        <Row>
+          <Col xs="12">
+            <MapaImg />
           </Col>
         </Row>
       </Container>

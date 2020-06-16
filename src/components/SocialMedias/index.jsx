@@ -1,5 +1,7 @@
 import React from "react";
+// styles
 import { SocialWrapper } from "./styles";
+// social medias icons
 import facebookSvg from "../../assets/img/icons/facebook.svg";
 import instagramSvg from "../../assets/img/icons/instagram.svg";
 import twitterSvg from "../../assets/img/icons/twitter.svg";

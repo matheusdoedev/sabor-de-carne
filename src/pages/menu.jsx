@@ -1,8 +1,10 @@
 import React from "react";
+// components
 import { Container, Row, Col } from "react-bootstrap";
-import Layout from "../layouts/Page/index";
+import Layout from "../layouts/page";
 import SEO from "../components/Seo/index";
 import PageTitle from "../components/Page-title/index";
+// styles
 import { MenuWrapper, MenuItem } from "../styles/pages/menu";
 // imgs
 import CapaMenu from "../assets/capa-menu";
@@ -13,7 +15,7 @@ import MenuImg3 from "../assets/menu-3";
 
 const Menu = () => (
   <Layout>
-    <SEO title="Menu" />
+    <SEO title="Menu" description="Veja o Menu da Sabor de Carne" />
     <CapaMenu />
 
     <div>

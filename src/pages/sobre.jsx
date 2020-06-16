@@ -1,8 +1,10 @@
 import React from "react";
+// components
 import { Container, Row, Col } from "react-bootstrap";
-import Layout from "../layouts/Page/index";
+import Layout from "../layouts/page";
 import SEO from "../components/Seo/index";
 import PageTitle from "../components/Page-title/index";
+// styles
 import { SobreWrapper } from "../styles/pages/sobre";
 // imgs
 import CapaSobre from "../assets/capa-sobre";
@@ -12,7 +14,7 @@ import Sobre2 from "../assets/sobre2";
 
 const Sobre = () => (
   <Layout>
-    <SEO title="Sobre" />
+    <SEO title="Sobre" description="Saiba mais sobre a Sabor de Carne" />
     <CapaSobre />
     <div>
       <Container>

@@ -1,14 +1,15 @@
 import React from "react";
-import Layout from "../layouts/Home-page/index";
+// components
+import Layout from "../layouts/home-page";
 import { Container, Row, Col } from "react-bootstrap";
 import SEO from "../components/Seo/index";
+// styles
 import {
   SobreSection,
   SaibaMaisBtn,
   MenuSection,
   VejaNossoMenuBtn,
-} from "../styles/pages/index";
-
+} from "./../styles/pages/index";
 // imgs
 import HomeSobreImg from "../assets/home-sobre";
 import MenuImg1 from "../assets/home-menu-1";
@@ -17,7 +18,7 @@ import MenuImg3 from "../assets/home-menu-3";
 
 const Index = () => (
   <Layout>
-    <SEO title="Inicio" />
+    <SEO title="Inicio" description="Pagina Inicial Sabor de Carne" />
 
     <SobreSection>
       <Container>

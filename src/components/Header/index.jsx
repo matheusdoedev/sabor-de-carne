@@ -1,5 +1,7 @@
 import React from "react";
+// components
 import { Row, Col, Container } from "react-bootstrap";
+// styles
 import {
   HeaderWrapper,
   NavBrand,

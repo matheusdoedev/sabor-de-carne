@@ -1,15 +1,16 @@
 import React from "react";
+// components
 import { Container, Row, Col } from "react-bootstrap";
-import Layout from "../layouts/Page/index";
+import Layout from "../layouts/page";
 import SEO from "../components/Seo/index";
 import FormReserva from "../components/Reserva/index";
 import PageTitle from "../components/Page-title/index";
+// styles
 import {
   FuncionamentoWrapper,
   FeaturesWrapper,
   FeatureInfo,
 } from "../styles/pages/churrascaria";
-
 // imgs
 import CapaChurrascaria from "../assets/capa-churrascaria";
 import FooterChurrascaria from "../assets/footer-churrascaria";
@@ -20,7 +21,10 @@ import FuncionamentoImg from "../assets/funcionamento";
 
 const Churrascaria = () => (
   <Layout>
-    <SEO title="Churrascaria" />
+    <SEO
+      title="Churrascaria"
+      description="Saiba mais sobre a nossa churrascaria"
+    />
     <CapaChurrascaria />
 
     <div>

@@ -1,8 +1,10 @@
-import { Link } from "gatsby";
 import React from "react";
-import { Row, Col, Container } from "react-bootstrap";
-import { FooterWrapper, SiteMap, Contatos, Copy } from "./styles";
+// components
 import SocialMedias from "../SocialMedias/index";
+import { Link } from "gatsby";
+import { Row, Col, Container } from "react-bootstrap";
+// styles
+import { FooterWrapper, SiteMap, Contatos, Copy } from "./styles";
 
 const Footer = () => (
   <FooterWrapper>
