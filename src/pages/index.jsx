@@ -41,27 +41,29 @@ const Index = () => (
     </SobreSection>
 
     <MenuSection>
-      <Row>
-        <Col xs="12">
-          <h2>Menu</h2>
-        </Col>
-      </Row>
-      <Row>
-        <Col xs="12" sm="4">
-          <MenuImg1 />
-        </Col>
-        <Col xs="12" sm="4">
-          <MenuImg2 />
-        </Col>
-        <Col xs="12" sm="4">
-          <MenuImg3 />
-        </Col>
-      </Row>
-      <Row>
-        <Col xs="12">
-          <VejaNossoMenuBtn to="/menu">Veja Nosso Menu</VejaNossoMenuBtn>
-        </Col>
-      </Row>
+      <Container>
+        <Row>
+          <Col xs="12">
+            <h2>Menu</h2>
+          </Col>
+        </Row>
+        <Row>
+          <Col xs="12" sm="4">
+            <MenuImg1 />
+          </Col>
+          <Col xs="12" sm="4">
+            <MenuImg2 />
+          </Col>
+          <Col xs="12" sm="4">
+            <MenuImg3 />
+          </Col>
+        </Row>
+        <Row>
+          <Col xs="12">
+            <VejaNossoMenuBtn to="/menu">Veja Nosso Menu</VejaNossoMenuBtn>
+          </Col>
+        </Row>
+      </Container>
     </MenuSection>
   </Layout>
 );

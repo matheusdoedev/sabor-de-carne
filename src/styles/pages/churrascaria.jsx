@@ -39,4 +39,10 @@ export const FeatureInfo = styled.div`
     background: var(--base-color);
     padding: var(--gap-sm);
   }
+
+  @media (max-width: 767.98px) {
+    & {
+      margin-bottom: var(--gap-sm);
+    }
+  }
 `;

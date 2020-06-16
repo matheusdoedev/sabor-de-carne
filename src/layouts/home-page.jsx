@@ -1,11 +1,11 @@
 import React from "react";
 import PropTypes from "prop-types";
 // components
-import Footer from "../../components/Footer/index";
-import Hero from "../../components/Hero/index";
+import Footer from "../components/Footer/index";
+import Hero from "../components/Hero/index";
 
 // styles
-import Styles from "./../../styles/main";
+import Styles from "../styles/main";
 
 const Home = ({ children }) => {
   return (

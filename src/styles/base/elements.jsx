@@ -8,15 +8,27 @@ const GlobalStyle = createGlobalStyle`
     }
 
     h1 {
-        font-size: 3rem
+        font-size: 3rem;
+
+        @media (max-width: 767.98px) {
+            font-size: 2.25rem;
+        }
     }
     
     h2 {
-        font-size: 2.25rem
+        font-size: 2.25rem;
+
+        @media (max-width: 767.98px) {
+            font-size: 1.5rem;
+        }
     }
 
     h3 {
         font-size: 1.5rem;
+
+        @media (max-width: 767.98px) {
+            font-size: 1.125rem;
+        }
     }
 
     a {
@@ -40,12 +52,20 @@ const GlobalStyle = createGlobalStyle`
     
     p, label, input, li {
         font-size: 1rem;  
-        opacity: 80%; 
+        opacity: 80%;
+
+        @media (max-width: 767.98px) {
+            font-size: .875rem;
+        }
     }
 
     button, a {
         font-size: 1.125rem;
         opacity: 90%;
+
+        @media (max-width: 767.98px) {
+            font-size: .875rem;
+        }
     }
 
     @media (max-width: 576px) {

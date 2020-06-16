@@ -3,12 +3,22 @@ import styled from "styled-components";
 export const FooterWrapper = styled.footer`
   & {
     background: var(--support-color-2);
-    padding: var(--gap-xl) 0;
+    padding: var(--gap-md) 0 var(--gap-lg) 0;
+
+    @media (max-width: 767.98px) {
+      & {
+        text-align: center;
+      }
+    }
   }
 
   h3 {
     color: var(--support-color-1);
-    margin-bottom: var(--gap-sm);
+    margin: var(--gap-md) 0;
+
+    /* &:first-child {
+      margin-top: 0;
+    } */
   }
 `;
 

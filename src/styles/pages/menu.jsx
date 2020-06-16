@@ -13,6 +13,12 @@ export const MenuWrapper = styled.section`
         margin-top: var(--gap-lg);
       }
     }
+
+    @media (max-width: 767.98px) {
+      & .row:last-child img {
+        margin-top: var(--gap-sm);
+      }
+    }
   }
 `;
 

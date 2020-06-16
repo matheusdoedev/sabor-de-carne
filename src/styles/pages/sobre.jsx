@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const SobreWrapper = styled.div`
   & {
-    padding: var(--gap-xl);
+    padding: var(--gap-xl) 0;
 
     .row {
       margin-bottom: var(--gap-lg);
@@ -19,6 +19,12 @@ export const SobreWrapper = styled.div`
     p {
       max-width: 30em;
       opacity: 80%;
+    }
+
+    @media (max-width: 767.98px) {
+      & img {
+        margin-top: var(--gap-sm);
+      }
     }
   }
 `;

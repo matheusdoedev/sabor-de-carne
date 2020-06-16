@@ -13,7 +13,7 @@ export const PageTitleWrapper = styled.div`
         height: 1px;
         background: #000000;
         opacity: 20%;
-        margin: var(--gap);
+        margin: var(--gap) 0;
       }
     }
 

@@ -4,7 +4,7 @@ import { SubmitButton } from "../../styles/objects/buttons";
 export const FormWrapper = styled.form`
   & {
     background: var(--secondary-color);
-    padding: var(--gap-xl);
+    padding: var(--gap-xl) 0;
 
     h2 {
       color: var(--support-color-1);

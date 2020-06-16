@@ -12,9 +12,10 @@ const GlobalStyle = createGlobalStyle`
 
     @media (max-width: 576px) {
         :root {
-        --gap-sm: var(--gap);
-        --gap-md: var(--gap-sm);
-        --gap-lg: var(--gap-md);
+        --gap-sm: 1rem;
+        --gap-md: 1.5625rem;
+        --gap-lg: 2.5625rem;
+        --gap-xl: 4.1875rem;
         }
     }
 

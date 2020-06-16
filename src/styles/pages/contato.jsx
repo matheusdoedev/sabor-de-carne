@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const ContatoWrapper = styled.div`
   & {
-    padding: var(--gap-xl);
+    padding: var(--gap-xl) 0;
 
     .row {
       margin-bottom: var(--gap-lg);
@@ -19,6 +19,12 @@ export const ContatoWrapper = styled.div`
     li {
       margin-bottom: calc(var(--gap) / 2);
       opacity: 80%;
+    }
+
+    @media (max-width: 767.98px) {
+      & .col:first-child h3 {
+        margin-top: var(--gap-sm);
+      }
     }
   }
 `;
