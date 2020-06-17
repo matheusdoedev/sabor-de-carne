@@ -7,8 +7,8 @@ import PageTitle from "../components/Page-title/index";
 // styles
 import { ContatoWrapper } from "../styles/pages/contato";
 // imgs
-import CapaContato from "../assets/capa-sobre";
-import FooterContato from "../assets/footer-sobre";
+import CapaContato from "../assets/capa-contato";
+import FooterContato from "../assets/footer-contato";
 import MapaImg from "../assets/mapa";
 
 const Contato = () => (

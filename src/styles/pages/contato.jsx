@@ -10,6 +10,12 @@ export const ContatoWrapper = styled.div`
       &:last-child {
         margin-bottom: 0;
       }
+
+      @media (max-width: 767.98px) {
+        & div:last-child h3 {
+          margin-top: var(--gap-md);
+        }
+      }
     }
 
     h3 {
