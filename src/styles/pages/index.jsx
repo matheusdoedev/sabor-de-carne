@@ -30,7 +30,7 @@ export const SaibaMaisBtn = styled(Button)`
 export const VejaNossoMenuBtn = styled(Button)`
   & {
     max-width: 300px;
-    margin: var(--gap-sm) auto 0 auto;
+    margin: var(--gap-md) auto 0 auto;
   }
 `;
 
