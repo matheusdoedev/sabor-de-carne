@@ -45,10 +45,10 @@ npm run serve
 ### Technologies
 
 <ul>
-  <li><a hre="https://www.gatsbyjs.org/">GatsbyJS</a></li>
-  <li><a hre="https://pt-br.reactjs.org/">ReactJS</a></li>
-  <li><a hre="https://react-bootstrap.github.io/">React BootStrap</a></li>
-  <li><a hre="https://styled-components.com/">Styled-Components</a></li>
+  <li><a href="https://www.gatsbyjs.org/">GatsbyJS</a></li>
+  <li><a href="https://pt-br.reactjs.org/">ReactJS</a></li>
+  <li><a href="https://react-bootstrap.github.io/">React BootStrap</a></li>
+  <li><a href="https://styled-components.com/">Styled-Components</a></li>
 </ul>
 
 ## Links
