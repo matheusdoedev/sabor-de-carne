@@ -4,6 +4,7 @@ export const PageTitleWrapper = styled.div`
   & {
     h2 {
       color: var(--base-color);
+      filter: brightness(90%);
       margin-top: var(--gap-lg);
 
       &:after {
