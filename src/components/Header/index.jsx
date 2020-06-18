@@ -27,19 +27,24 @@ const Header = () => {
               <MobileMenu onClick={menuMobile}></MobileMenu>
               <NavMenu data-anime="menu-mobile">
                 <NavItem>
-                  <NavLink to="/">Inicio</NavLink>
+                  <NavLink to="/churrascaria" alt="Churrascaria">
+                    Churrascaria
+                  </NavLink>
                 </NavItem>
                 <NavItem>
-                  <NavLink to="/churrascaria">Churrascaria</NavLink>
+                  <NavLink to="/menu" alt="Menu">
+                    Menu
+                  </NavLink>
                 </NavItem>
                 <NavItem>
-                  <NavLink to="/menu">Menu</NavLink>
+                  <NavLink to="/sobre" alt="Sobre">
+                    Sobre
+                  </NavLink>
                 </NavItem>
                 <NavItem>
-                  <NavLink to="/sobre">Sobre</NavLink>
-                </NavItem>
-                <NavItem>
-                  <NavLink to="/contato">Contato</NavLink>
+                  <NavLink to="/contato" alt="Contato">
+                    Contato
+                  </NavLink>
                 </NavItem>
               </NavMenu>
             </Nav>

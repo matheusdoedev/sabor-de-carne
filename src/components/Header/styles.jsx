@@ -12,13 +12,13 @@ export const HeaderWrapper = styled.header`
 
 export const NavBrand = styled(Link)`
   & {
-    color: var(--support-color-1);
+    color: var(--base-color);
+    filter: brightness(90%);
     font-size: 2.25rem;
     font-family: var(--font-primary);
     align-self: center;
     opacity: 90%;
     transition: 0.2s;
-    color: var(--base-color);
 
     &:hover {
       color: var(--secondary-color);
@@ -114,6 +114,7 @@ export const NavLink = styled(Link)`
     font-size: 1rem;
     transition: 0.2s;
     color: var(--base-color);
+    filter: brightness(90%);
 
     &:hover {
       color: var(--secondary-color);
