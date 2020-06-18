@@ -26,11 +26,6 @@ export const FuncionamentoWrapper = styled.section`
 export const FeaturesWrapper = styled.section`
   & {
     padding: var(--gap-xl) 0;
-
-    h3 {
-      text-align: center;
-      margin-bottom: var(--gap);
-    }
   }
 `;
 
@@ -38,6 +33,17 @@ export const FeatureInfo = styled.div`
   & {
     background: var(--base-color);
     padding: var(--gap-sm);
+    height: 160px;
+    box-sizing: border-box;
+
+    h3,
+    p {
+      text-align: center;
+    }
+
+    h3 {
+      margin-bottom: var(--gap);
+    }
   }
 
   @media (max-width: 767.98px) {

@@ -33,10 +33,7 @@ const Churrascaria = () => (
           <Col xs="12">
             <PageTitle
               title="Churrascaria"
-              subtitle="Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s, when an unknown printer took a galley of
-              type and scrambled it to"
+              subtitle="Saiba mais sobre a nossa churrascaria"
             />
           </Col>
         </Row>
@@ -51,8 +48,8 @@ const Churrascaria = () => (
             <FeatureInfo>
               <h3>Som ao vivo</h3>
               <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has
+                Providenciamos um ambiente agradavél e sofisticado com som ao
+                vivo.
               </p>
             </FeatureInfo>
           </Col>
@@ -60,10 +57,7 @@ const Churrascaria = () => (
             <Card2Img />
             <FeatureInfo>
               <h3>Rodizio</h3>
-              <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has
-              </p>
+              <p>O nosso consumidor come o quanto puder.</p>
             </FeatureInfo>
           </Col>
           <Col xs="12" sm="4">
@@ -71,8 +65,8 @@ const Churrascaria = () => (
             <FeatureInfo>
               <h3>Vinhos</h3>
               <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has
+                Contamos com uma ampla variedade de vinhos e bebidas no geral
+                para servir nossos consumidores.
               </p>
             </FeatureInfo>
           </Col>

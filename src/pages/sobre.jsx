@@ -22,10 +22,7 @@ const Sobre = () => (
           <Col xs="12">
             <PageTitle
               title="Sobre"
-              subtitle="Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s, when an unknown printer took a galley of
-              type and scrambled it to"
+              subtitle="Saiba mais sobre a Sabor de Carne"
             />
           </Col>
         </Row>
@@ -38,15 +35,14 @@ const Sobre = () => (
           <Col xs="12" sm="7">
             <h3>História</h3>
             <p>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s
+              A churrascaria Sabor de Carne nasceu em 1994, com a ideia de
+              entregar um serviço diferente da maioria.
             </p>
             <br />
             <p>
-              Contrary to popular belief, Lorem Ipsum is not simply random text.
-              It has roots in a piece of classical Latin literature from 45 BC,
-              making it over 2000 years old. Richard McClintock
+              Situado em Salvador, no Rio Vermelho, com mais de 20 anos de
+              história, é mantida a ideia de entregar algo diferente,
+              sofisticado, que satisfaça o consumidor.
             </p>
           </Col>
           <Col xs="12" sm="5">
@@ -57,15 +53,14 @@ const Sobre = () => (
           <Col xs="12" sm="7">
             <h3>Missão e Valores</h3>
             <p>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s
+              Ser tradicional, diferente e a sofisticação são os valores da
+              Sabor de Carne.
             </p>
             <br />
             <p>
-              Contrary to popular belief, Lorem Ipsum is not simply random text.
-              It has roots in a piece of classical Latin literature from 45 BC,
-              making it over 2000 years old. Richard McClintock
+              Buscando estar sempre inovando na maneira de servir, na qualidade
+              do atendimento, na variedade de opções disponíveis aos nossos
+              consumidores.
             </p>
           </Col>
           <Col xs="12" sm="5">

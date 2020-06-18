@@ -52,10 +52,9 @@ const Header = () => {
           <Col xs="12">
             <Title>Sabor de Carne</Title>
             <TagLine>
-              Lorem ipsum is simply dummy text of the printing and typesetting
-              industry.
+              Churrascaria e restaurante em Salvador. Venha conferir!
             </TagLine>
-            <CtaButton href="#" primary>
+            <CtaButton to="/churrascaria#reserva" primary>
               Faça sua Reserva!
             </CtaButton>
           </Col>
