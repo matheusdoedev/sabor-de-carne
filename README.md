@@ -8,7 +8,7 @@
 
 This is a website for a fictional restaurant steakhouse made with ReactJS, GatsbyJS, BootStrap and Styled-Components
 
-<a href="https://sabordecarne.netlify.com"><img src="./github/desktop-thumb.jpg"></a>
+<a href="https://sabordecarne.netlify.com"><img src="./github/thumbs/readme-thumb.jpg"></a>
 
 ## Get Started
 
@@ -18,23 +18,28 @@ Start:
 npm run start
 ```
 
-Build:
+Production:
 
 ```sh
 npm run build
+```
+
+```sh
+npm run serve
 ```
 
 ## About
 
 ### What is that?
 
-<p> This is an institutional website project made with GatsbyJS, BootStrap and StyleComponents.</p>
+<ul>
+<li>This is an institutional website project made with GatsbyJS, ReactJS, BootStrap and Styled-components.</li>
+</ul>
 
 ### Why ?
 
 <ul>
-<li> EThis was a side project that I did on the UI / UX Design course at Coursera. And so in development I decided to use Gatsby, since the site itself would be a static page </li>
-<li> Practice and gain more experience </li>
+<li>This is a project that I did with ReactJS , GatsbyJs, with the goal to I had more practice, experience and to study both technologies </li>
 </ul>
 
 ### Technologies
@@ -48,11 +53,9 @@ npm run build
 
 ## Links
 
-[Live](https://azeitededende.netlify.com)
-[Screens](https://www.behance.net/gallery/98582339/Azeite-de-Dende-UI)
-
-<!-- [Mockups](https://twitter.com/dbader_org)
-[More about](https://twitter.com/dbader_org) -->
+<ul>
+<li><a href="https://sabordecarne.netlify.com">Live</a></li>
+</ul>
 
 ## Meta
 
