@@ -5,6 +5,7 @@ const GlobalStyle = createGlobalStyle`
         line-height: 1em;
         font-family: var(--font-primary);
         text-transform: uppercase;
+        font-weight: 700;
     }
 
     h1 {

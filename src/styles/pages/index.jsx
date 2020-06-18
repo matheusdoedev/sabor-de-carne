@@ -7,7 +7,7 @@ export const SobreSection = styled.section`
   }
 
   & h2 {
-    margin-bottom: var(--gap-lg);
+    margin-bottom: var(--gap-md);
   }
 
   & p {
@@ -19,7 +19,7 @@ export const SobreSection = styled.section`
 export const SaibaMaisBtn = styled(Button)`
   & {
     max-width: 217px;
-    margin-top: var(--gap-lg);
+    margin-top: var(--gap-md);
 
     @media (max-width: 767.98px) {
       margin-bottom: var(--gap-lg);
