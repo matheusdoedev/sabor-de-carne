@@ -43,6 +43,8 @@ export const FormWrapper = styled.form`
 
     span {
       text-align: right;
+      font-size: 0.75rem;
+      opacity: 60%;
     }
   }
 `;

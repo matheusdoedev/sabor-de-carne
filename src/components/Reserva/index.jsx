@@ -5,7 +5,7 @@ import { FormWrapper, ReservarBtn } from "./styles";
 
 const FormReserva = () => {
   return (
-    <FormWrapper>
+    <FormWrapper id="reserva">
       <Container>
         <Row>
           <Col xs="12" sm={{ span: 6, offset: 3 }}>
@@ -20,7 +20,10 @@ const FormReserva = () => {
             <label for="telefone">Telefone</label>
             <input type="tel" name="telefone" id="telefone" required />
 
-            <label for="pessoas">
+            <label
+              for="pessoas"
+              style={{ display: "flex", justifyContent: "space-between" }}
+            >
               Quantidade de pessoas*<span>Até no maximo 10 pessoas.</span>
             </label>
             <input type="number" name="pessoas" id="pessoas" required />
