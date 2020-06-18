@@ -9,15 +9,15 @@ const Image = () => {
         relativePath: { eq: "img/mobile/funcionamento-mobile.jpg" }
       ) {
         childImageSharp {
-          fluid(maxWidth: 1000, quality: 100) {
-            ...GatsbyImageSharpFluid
+          fluid(maxWidth: 1000, quality: 80) {
+            ...GatsbyImageSharpFluid_withWebp
           }
         }
       }
       desktopImage: file(relativePath: { eq: "img/funcionamento.jpg" }) {
         childImageSharp {
-          fluid(maxWidth: 2000, quality: 100) {
-            ...GatsbyImageSharpFluid
+          fluid(maxWidth: 2000, quality: 80) {
+            ...GatsbyImageSharpFluid_withWebp
           }
         }
       }

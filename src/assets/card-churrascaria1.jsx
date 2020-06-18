@@ -10,7 +10,7 @@ const Image = () => {
       ) {
         childImageSharp {
           fluid(maxWidth: 2000, quality: 80) {
-            ...GatsbyImageSharpFluid
+            ...GatsbyImageSharpFluid_withWebp
           }
         }
       }

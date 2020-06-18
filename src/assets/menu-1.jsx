@@ -8,14 +8,14 @@ const Image = () => {
       mobileImage: file(relativePath: { eq: "img/mobile/menu-1-mobile.jpg" }) {
         childImageSharp {
           fluid(maxWidth: 1000, quality: 100) {
-            ...GatsbyImageSharpFluid
+            ...GatsbyImageSharpFluid_withWebp
           }
         }
       }
       desktopImage: file(relativePath: { eq: "img/menu-1.jpg" }) {
         childImageSharp {
           fluid(maxWidth: 2000, quality: 100) {
-            ...GatsbyImageSharpFluid
+            ...GatsbyImageSharpFluid_withWebp
           }
         }
       }
