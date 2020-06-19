@@ -6,7 +6,7 @@ import SEO from "../components/Seo/index";
 // styles
 import { Page404wrapper } from "../styles/pages/404";
 
-const page404 = () => (
+const Page404 = () => (
   <Layout>
     <SEO title="404" description="Pagina não encontrada" />
 
@@ -22,4 +22,4 @@ const page404 = () => (
   </Layout>
 );
 
-export default page404;
+export default Page404;
