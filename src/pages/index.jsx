@@ -58,7 +58,9 @@ const Index = () => (
         </Row>
         <Row>
           <Col xs="12">
-            <VejaNossoMenuBtn to="/menu">Veja Nosso Menu</VejaNossoMenuBtn>
+            <VejaNossoMenuBtn to="/menu" alt="Veja Nosso Menu">
+              Veja Nosso Menu
+            </VejaNossoMenuBtn>
           </Col>
         </Row>
       </Container>
