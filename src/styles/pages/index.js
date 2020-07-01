@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Button } from "../../styles/objects/buttons";
+import { Button } from "../objects/buttons";
 
 export const SobreSection = styled.section`
   & {
