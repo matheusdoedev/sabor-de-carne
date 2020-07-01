@@ -42,6 +42,7 @@ const Footer = () => (
             </ul>
           </SiteMap>
         </Col>
+        {/* social medias / redes sociais */}
         <Col xs="12" sm="4">
           <h3>Redes Sociais</h3>
           <SocialMedias />
