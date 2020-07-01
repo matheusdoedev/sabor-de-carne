@@ -2,6 +2,8 @@ import React from "react";
 // components
 import Layout from "../layouts/home-page";
 import { Container, Row, Col } from "react-bootstrap";
+import { graphql, useStaticQuery } from "gatsby";
+import Img from "gatsby-image";
 import SEO from "../components/Seo/index";
 // styles
 import {
@@ -10,62 +12,94 @@ import {
   MenuSection,
   VejaNossoMenuBtn,
 } from "./../styles/pages/index";
-// imgs
-import HomeSobreImg from "../assets/home-sobre";
-import MenuImg1 from "../assets/home-menu-1";
-import MenuImg2 from "../assets/home-menu-2";
-import MenuImg3 from "../assets/home-menu-3";
 
-const Index = () => (
-  <Layout>
-    <SEO title="Inicio" description="Pagina Inicial Sabor de Carne" />
+const Index = () => {
+  const { homeMenu1, homeMenu2, homeMenu3, homeSobre } = useStaticQuery(
+    graphql`
+      query {
+        homeMenu1: file(relativePath: { eq: "img/desktop/home-menu1.jpg" }) {
+          childImageSharp {
+            fluid(maxWidth: 1000, quality: 80) {
+              ...GatsbyImageSharpFluid_withWebp
+            }
+          }
+        }
+        homeMenu2: file(relativePath: { eq: "img/desktop/home-menu2.jpg" }) {
+          childImageSharp {
+            fluid(quality: 80, maxWidth: 2000) {
+              ...GatsbyImageSharpFluid_withWebp
+            }
+          }
+        }
+        homeMenu3: file(relativePath: { eq: "img/desktop/home-menu3.jpg" }) {
+          childImageSharp {
+            fluid(quality: 80, maxWidth: 2000) {
+              ...GatsbyImageSharpFluid_withWebp
+            }
+          }
+        }
+        homeSobre: file(relativePath: { eq: "img/desktop/home-sobre.jpg" }) {
+          childImageSharp {
+            fluid(quality: 80, maxWidth: 2000) {
+              ...GatsbyImageSharpFluid_withWebp
+            }
+          }
+        }
+      }
+    `
+  );
 
-    <SobreSection>
-      <Container>
-        <Row>
-          <Col xs="12" sm="7">
-            <h2>Sobre</h2>
-            <p>
-              A Sabor de Carne é uma churrascaria tradicional com muitos anos de
-              existência.
-            </p>
-            <SaibaMaisBtn to="/sobre">Saiba Mais</SaibaMaisBtn>
-          </Col>
-          <Col xs="12" sm="5">
-            <HomeSobreImg />
-          </Col>
-        </Row>
-      </Container>
-    </SobreSection>
+  return (
+    <Layout>
+      <SEO title="Inicio" description="Pagina Inicial Sabor de Carne" />
 
-    <MenuSection>
-      <Container>
-        <Row>
-          <Col xs="12">
-            <h2>Menu</h2>
-          </Col>
-        </Row>
-        <Row>
-          <Col xs="12" sm="4">
-            <MenuImg1 />
-          </Col>
-          <Col xs="12" sm="4">
-            <MenuImg2 />
-          </Col>
-          <Col xs="12" sm="4">
-            <MenuImg3 />
-          </Col>
-        </Row>
-        <Row>
-          <Col xs="12">
-            <VejaNossoMenuBtn to="/menu" alt="Veja Nosso Menu">
-              Veja Nosso Menu
-            </VejaNossoMenuBtn>
-          </Col>
-        </Row>
-      </Container>
-    </MenuSection>
-  </Layout>
-);
+      <SobreSection>
+        <Container>
+          <Row>
+            <Col xs="12" sm="7">
+              <h2>Sobre</h2>
+              <p>
+                A Sabor de Carne é uma churrascaria tradicional com muitos anos
+                de existência.
+              </p>
+              <SaibaMaisBtn to="/sobre">Saiba Mais</SaibaMaisBtn>
+            </Col>
+            <Col xs="12" sm="5">
+              <Img fluid={homeSobre.childImageSharp.fluid} />
+            </Col>
+          </Row>
+        </Container>
+      </SobreSection>
+
+      <MenuSection>
+        <Container>
+          <Row>
+            <Col xs="12">
+              <h2>Menu</h2>
+            </Col>
+          </Row>
+          <Row>
+            <Col xs="12" sm="4">
+              <Img fluid={homeMenu1.childImageSharp.fluid} />
+            </Col>
+            <Col xs="12" sm="4">
+              <Img fluid={homeMenu2.childImageSharp.fluid} />
+            </Col>
+            <Col xs="12" sm="4">
+              <Img fluid={homeMenu3.childImageSharp.fluid} />
+            </Col>
+          </Row>
+          <Row>
+            <Col xs="12">
+              <VejaNossoMenuBtn to="/menu" alt="Veja Nosso Menu">
+                Veja Nosso Menu
+              </VejaNossoMenuBtn>
+            </Col>
+          </Row>
+        </Container>
+      </MenuSection>
+    </Layout>
+  );
+};
 
 export default Index;

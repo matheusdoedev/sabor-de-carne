@@ -8,20 +8,19 @@ import SEO from "../components/Seo/index";
 import PageTitle from "../components/Page-title/index";
 // styles
 import { SobreWrapper } from "../styles/pages/sobre";
-// imgs
-import Sobre1 from "../assets/sobre1";
-import Sobre2 from "../assets/sobre2";
 
 const Sobre = () => {
   const {
-    footerSobreMobile,
-    footerSobreDesktop,
-    capaSobreMobile,
-    capaSobreDesktop,
+    footerMobile,
+    footerDesktop,
+    capaMobile,
+    capaDesktop,
+    sobre1,
+    sobre2,
   } = useStaticQuery(
     graphql`
       query {
-        footerSobreMobile: file(
+        footerMobile: file(
           relativePath: { eq: "img/mobile/footer-sobre-mobile.jpg" }
         ) {
           childImageSharp {
@@ -30,14 +29,16 @@ const Sobre = () => {
             }
           }
         }
-        footerSobreDesktop: file(relativePath: { eq: "img/footer-sobre.jpg" }) {
+        footerDesktop: file(
+          relativePath: { eq: "img/desktop/footer-sobre.jpg" }
+        ) {
           childImageSharp {
             fluid(quality: 80, maxWidth: 2000) {
               ...GatsbyImageSharpFluid_withWebp
             }
           }
         }
-        capaSobreMobile: file(
+        capaMobile: file(
           relativePath: { eq: "img/mobile/capa-sobre-mobile.jpg" }
         ) {
           childImageSharp {
@@ -46,7 +47,21 @@ const Sobre = () => {
             }
           }
         }
-        capaSobreDesktop: file(relativePath: { eq: "img/capa-sobre.jpg" }) {
+        capaDesktop: file(relativePath: { eq: "img/desktop/capa-sobre.jpg" }) {
+          childImageSharp {
+            fluid(quality: 80, maxWidth: 2000) {
+              ...GatsbyImageSharpFluid_withWebp
+            }
+          }
+        }
+        sobre1: file(relativePath: { eq: "img/desktop/sobre1.jpg" }) {
+          childImageSharp {
+            fluid(quality: 80, maxWidth: 2000) {
+              ...GatsbyImageSharpFluid_withWebp
+            }
+          }
+        }
+        sobre2: file(relativePath: { eq: "img/desktop/sobre2.jpg" }) {
           childImageSharp {
             fluid(quality: 80, maxWidth: 2000) {
               ...GatsbyImageSharpFluid_withWebp
@@ -57,18 +72,18 @@ const Sobre = () => {
     `
   );
 
-  const capaSobre = [
-    capaSobreMobile.childImageSharp.fluid,
+  const capa = [
+    capaMobile.childImageSharp.fluid,
     {
-      ...capaSobreDesktop.childImageSharp.fluid,
+      ...capaDesktop.childImageSharp.fluid,
       media: `(min-width: 768px)`,
     },
   ];
 
-  const footerSobre = [
-    footerSobreMobile.childImageSharp.fluid,
+  const footer = [
+    footerMobile.childImageSharp.fluid,
     {
-      ...footerSobreDesktop.childImageSharp.fluid,
+      ...footerDesktop.childImageSharp.fluid,
       media: `(min-width: 768px)`,
     },
   ];
@@ -76,7 +91,7 @@ const Sobre = () => {
   return (
     <Layout>
       <SEO title="Sobre" description="Saiba mais sobre a Sabor de Carne" />
-      <Img fluid={capaSobre} />
+      <Img fluid={capa} />
       <div>
         <Container>
           <Row>
@@ -107,7 +122,7 @@ const Sobre = () => {
               </p>
             </Col>
             <Col xs="12" sm="5">
-              <Sobre1 />
+              <Img fluid={sobre1.childImageSharp.fluid} />
             </Col>
           </Row>
           <Row>
@@ -125,13 +140,13 @@ const Sobre = () => {
               </p>
             </Col>
             <Col xs="12" sm="5">
-              <Sobre2 />
+              <Img fluid={sobre2.childImageSharp.fluid} />
             </Col>
           </Row>
         </Container>
       </SobreWrapper>
 
-      <Img fluid={footerSobre} />
+      <Img fluid={footer} />
     </Layout>
   );
 };
