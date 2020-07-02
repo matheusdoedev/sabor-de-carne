@@ -1,6 +1,7 @@
 import React from "react";
+import loadable from "@loadable/component";
 // components
-import SocialMedias from "../SocialMedias/index";
+const SocialMedias = loadable(() => import("../SocialMedias/index"));
 import { Link } from "gatsby";
 import { Row, Col, Container } from "react-bootstrap";
 // styles

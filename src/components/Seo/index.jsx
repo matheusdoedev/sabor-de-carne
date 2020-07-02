@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { Helmet } from "react-helmet";
 import { useStaticQuery, graphql } from "gatsby";
+import Helmet from "react-helmet";
 
 function SEO({ description, lang, meta, title }) {
   const { site } = useStaticQuery(
@@ -61,7 +61,13 @@ function SEO({ description, lang, meta, title }) {
           content: metaDescription,
         },
       ].concat(meta)}
-    ></Helmet>
+    >
+      <link
+        rel="preload"
+        href="https://fonts.googleapis.com/css2?family=Lato&family=Playfair+Display:wght@700&display=swap"
+        as="style"
+      />
+    </Helmet>
   );
 }
 

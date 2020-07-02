@@ -1,8 +1,11 @@
 import React from "react";
+import { graphql, useStaticQuery } from "gatsby";
 // components
-import Layout from "../layouts/page";
-import { Container, Row, Col } from "react-bootstrap";
-import SEO from "../components/Seo/index";
+const Container = loadable(() => import("react-bootstrap/Container"));
+const Row = loadable(() => import("react-bootstrap/Row"));
+const Col = loadable(() => import("react-bootstrap/Col"));
+const Layout = loadable(() => import("../layouts/page"));
+const SEO = loadable(() => import("../components/Seo/index"));
 // styles
 import { Page404wrapper } from "../styles/pages/404";
 

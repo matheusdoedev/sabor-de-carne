@@ -1,16 +1,17 @@
 import React from "react";
 import PropTypes from "prop-types";
+import loadable from "@loadable/component";
 // components
-import Footer from "../components/Footer/index";
-import Hero from "../components/Hero/index";
+const Footer = loadable(() => import("../components/Footer/index"));
+const Hero = loadable(() => import("../components/Hero/index"));
 // styles
-import "../../node_modules/bootstrap/dist/css/bootstrap-grid.min.css";
-import Colors from "./../styles/settings/colors";
-import Fonts from "./../styles/settings/fonts";
-import Gaps from "./../styles/settings/gaps";
-import Normalize from "./../styles/generic/normalize";
-import Reset from "./../styles/generic/reset";
-import Elements from "./../styles/base/elements";
+import "bootstrap/dist/css/bootstrap-grid.min.css";
+const Colors = loadable(() => import("./../styles/settings/colors"));
+const Fonts = loadable(() => import("./../styles/settings/fonts"));
+const Gaps = loadable(() => import("./../styles/settings/gaps"));
+const Normalize = loadable(() => import("./../styles/generic/normalize"));
+const Reset = loadable(() => import("./../styles/generic/reset"));
+const Elements = loadable(() => import("./../styles/base/elements"));
 
 const Home = ({ children }) => {
   return (
@@ -18,6 +19,7 @@ const Home = ({ children }) => {
       <Colors />
       <Fonts />
       <Gaps />
+      <Grid />
       <Normalize />
       <Reset />
       <Elements />

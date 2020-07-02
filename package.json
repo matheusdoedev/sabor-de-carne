@@ -5,7 +5,12 @@
   "version": "0.1.0",
   "author": "@Matheusdoe-dev",
   "dependencies": {
+    "@loadable/babel-plugin": "^5.13.0",
+    "@loadable/component": "^5.13.0",
+    "@loadable/server": "^5.13.0",
+    "@loadable/webpack-plugin": "^5.13.0",
     "babel-plugin-styled-components": "^1.10.7",
+    "babel-preset-gatsby": "^0.4.12",
     "bootstrap": "^4.5.0",
     "gatsby": "^2.22.15",
     "gatsby-background-image": "^1.1.1",
@@ -38,7 +43,8 @@
     "start": "npm run develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
+    "production": "npm run clean && npm run build && npm run serve"
   },
   "repository": {
     "type": "git",

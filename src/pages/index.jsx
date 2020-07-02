@@ -1,10 +1,13 @@
 import React from "react";
+import { useStaticQuery, graphql } from "gatsby";
+import loadable from "@loadable/component";
 // components
-import Layout from "../layouts/home-page";
-import { Container, Row, Col } from "react-bootstrap";
-import { graphql, useStaticQuery } from "gatsby";
-import Img from "gatsby-image";
-import SEO from "../components/Seo/index";
+const Container = loadable(() => import("react-bootstrap/Container"));
+const Row = loadable(() => import("react-bootstrap/Row"));
+const Col = loadable(() => import("react-bootstrap/Col"));
+const Layout = loadable(() => import("../layouts/home-page"));
+const Img = loadable(() => import("gatsby-image"));
+const SEO = loadable(() => import("../components/Seo/index"));
 // styles
 import {
   SobreSection,

@@ -1,16 +1,17 @@
 import React from "react";
 import PropTypes from "prop-types";
+import loadable from "@loadable/component";
 // components
-import Header from "../components/Header/index";
-import Footer from "../components/Footer/index";
+const Header = loadable(() => import("../components/Header/index"));
+const Footer = loadable(() => import("../components/Footer/index"));
 // styles
-import "../../node_modules/bootstrap/dist/css/bootstrap-grid.min.css";
-import Colors from "./../styles/settings/colors";
-import Fonts from "./../styles/settings/fonts";
-import Gaps from "./../styles/settings/gaps";
-import Normalize from "./../styles/generic/normalize";
-import Reset from "./../styles/generic/reset";
-import Elements from "./../styles/base/elements";
+import "bootstrap/dist/css/bootstrap-grid.min.css";
+const Colors = loadable(() => import("./../styles/settings/colors"));
+const Fonts = loadable(() => import("./../styles/settings/fonts"));
+const Gaps = loadable(() => import("./../styles/settings/gaps"));
+const Normalize = loadable(() => import("./../styles/generic/normalize"));
+const Reset = loadable(() => import("./../styles/generic/reset"));
+const Elements = loadable(() => import("./../styles/base/elements"));
 
 const Page = ({ children }) => {
   return (
