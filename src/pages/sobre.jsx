@@ -11,7 +11,7 @@ const SEO = loadable(() => import("../components/Seo/index"));
 const PageTitle = loadable(() => import("../components/Page-title/index"));
 // styles
 const SobreWrapper = loadable(() =>
-  import("../styles/components/SobreSection")
+  import("../styles/components/SobreWrapper")
 );
 
 const Sobre = () => {
