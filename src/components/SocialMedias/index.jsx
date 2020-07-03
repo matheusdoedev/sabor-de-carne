@@ -8,13 +8,13 @@ import twitterSvg from "../../assets/img/icons/twitter.svg";
 
 const SocialMedias = () => (
   <SocialWrapper>
-    <a href="">
+    <a href="facebook.com" target="BLANK">
       <img src={facebookSvg} alt="Facebook" />
     </a>
-    <a href="">
+    <a href="instagram.com" target="BLANK">
       <img src={instagramSvg} alt="Instagram" />
     </a>
-    <a href="">
+    <a href="twitter.com" target="BLANK">
       <img src={twitterSvg} alt="Twitter" />
     </a>
   </SocialWrapper>
