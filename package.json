@@ -2,7 +2,7 @@
   "name": "sabor-de-carne",
   "private": true,
   "description": "Site institucional Sabor de Carne",
-  "version": "0.1.0",
+  "version": "2.0.0",
   "author": "@Matheusdoe-dev",
   "dependencies": {
     "@loadable/babel-plugin": "^5.13.0",
