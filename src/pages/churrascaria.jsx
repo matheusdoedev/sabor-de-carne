@@ -1,5 +1,6 @@
 import React from "react";
 import { graphql, useStaticQuery } from "gatsby";
+import loadable from "@loadable/component";
 // components
 const Container = loadable(() => import("react-bootstrap/Container"));
 const Row = loadable(() => import("react-bootstrap/Row"));
@@ -7,12 +8,16 @@ const Col = loadable(() => import("react-bootstrap/Col"));
 const Layout = loadable(() => import("../layouts/page"));
 const Img = loadable(() => import("gatsby-image"));
 const SEO = loadable(() => import("../components/Seo/index"));
-// styles
-import {
-  FuncionamentoWrapper,
-  FeaturesWrapper,
-  FeatureInfo,
-} from "../styles/pages/churrascaria";
+const PageTitle = loadable(() => import("../components/Page-title/index"));
+const FormReserva = loadable(() => import("../components/Reserva/index"));
+// styled-components
+const FeaturesWrapper = loadable(() =>
+  import("../styles/components/FeaturesWrapper")
+);
+const FuncionamentoWrapper = loadable(() =>
+  import("../styles/components/FuncionamentoWrapper")
+);
+const FeatureInfo = loadable(() => import("../styles/components/FeatureInfo"));
 
 const Churrascaria = () => {
   const {

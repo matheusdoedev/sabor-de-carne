@@ -1,7 +1,7 @@
 import { Link } from "gatsby";
 import styled from "styled-components";
 
-export const Button = styled(Link)`
+const Button = styled(Link)`
   & {
     display: block;
     text-decoration: none;
@@ -38,10 +38,4 @@ export const Button = styled(Link)`
   }
 `;
 
-export const SubmitButton = styled.button`
-  & {
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-`;
+export default Button;

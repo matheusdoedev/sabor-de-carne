@@ -1,5 +1,6 @@
 import React from "react";
 import { graphql, useStaticQuery } from "gatsby";
+import loadable from "@loadable/component";
 // components
 const Container = loadable(() => import("react-bootstrap/Container"));
 const Row = loadable(() => import("react-bootstrap/Row"));
@@ -7,8 +8,12 @@ const Col = loadable(() => import("react-bootstrap/Col"));
 const Layout = loadable(() => import("../layouts/page"));
 const Img = loadable(() => import("gatsby-image"));
 const SEO = loadable(() => import("../components/Seo/index"));
+const PageTitle = loadable(() => import("../components/Page-title/index"));
 // styles
-import { MenuWrapper, MenuItem } from "../styles/pages/menu";
+const MenuWrapper = loadable(() => import("../styles/components/MenuWrapper"));
+const MenuItem = loadable(() =>
+  import("../styles/components/MenuItem")
+);
 
 const Menu = () => {
   const {

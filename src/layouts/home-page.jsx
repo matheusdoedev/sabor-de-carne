@@ -8,7 +8,7 @@ const Hero = loadable(() => import("../components/Hero/index"));
 import "bootstrap/dist/css/bootstrap-grid.min.css";
 const Colors = loadable(() => import("./../styles/settings/colors"));
 const Fonts = loadable(() => import("./../styles/settings/fonts"));
-const Gaps = loadable(() => import("./../styles/settings/gaps"));
+const Gaps = loadable(() => import("../styles/settings/gaps"));
 const Normalize = loadable(() => import("./../styles/generic/normalize"));
 const Reset = loadable(() => import("./../styles/generic/reset"));
 const Elements = loadable(() => import("./../styles/base/elements"));
@@ -19,7 +19,6 @@ const Home = ({ children }) => {
       <Colors />
       <Fonts />
       <Gaps />
-      <Grid />
       <Normalize />
       <Reset />
       <Elements />

@@ -1,5 +1,5 @@
 import React from "react";
-import { graphql, useStaticQuery } from "gatsby";
+import loadable from "@loadable/component";
 // components
 const Container = loadable(() => import("react-bootstrap/Container"));
 const Row = loadable(() => import("react-bootstrap/Row"));
@@ -7,7 +7,9 @@ const Col = loadable(() => import("react-bootstrap/Col"));
 const Layout = loadable(() => import("../layouts/page"));
 const SEO = loadable(() => import("../components/Seo/index"));
 // styles
-import { Page404wrapper } from "../styles/pages/404";
+const Page404wrapper = loadable(() =>
+  import("../styles/components/Page404wrapper")
+);
 
 const Page404 = () => (
   <Layout>

@@ -1,8 +1,8 @@
 import styled from "styled-components";
 // components
 import { Link } from "gatsby";
-import { Button } from "../../styles/objects/buttons";
-import bgMainImg from "./bg-main";
+import Button from "../../styles/objects/Button";
+import bgMainImg from "../../assets/bg-main";
 
 export const Hero = styled(bgMainImg)`
   & {

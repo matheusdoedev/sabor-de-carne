@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { SubmitButton } from "../../styles/objects/buttons";
+import SubmitButton from "../../styles/objects/SubmitButton";
 
 export const FormWrapper = styled.form`
   & {

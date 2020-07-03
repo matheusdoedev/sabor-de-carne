@@ -8,13 +8,17 @@ const Col = loadable(() => import("react-bootstrap/Col"));
 const Layout = loadable(() => import("../layouts/home-page"));
 const Img = loadable(() => import("gatsby-image"));
 const SEO = loadable(() => import("../components/Seo/index"));
-// styles
-import {
-  SobreSection,
-  SaibaMaisBtn,
-  MenuSection,
-  VejaNossoMenuBtn,
-} from "./../styles/pages/index";
+// styled-components
+const SobreSection = loadable(() =>
+  import("../styles/components/SobreSection")
+);
+const MenuSection = loadable(() => import("../styles/components/MenuSection"));
+const SaibaMaisBtn = loadable(() =>
+  import("../styles/components/SaibaMaisBtn")
+);
+const VejaNossoMenuBtn = loadable(() =>
+  import("../styles/components/VejaNossoMenuBtn")
+);
 
 const Index = () => {
   const { homeMenu1, homeMenu2, homeMenu3, homeSobre } = useStaticQuery(
