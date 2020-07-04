@@ -6,12 +6,12 @@ const Header = loadable(() => import("../components/Header/index"));
 const Footer = loadable(() => import("../components/Footer/index"));
 // styles
 import "bootstrap/dist/css/bootstrap-grid.min.css";
-const Colors = loadable(() => import("./../styles/settings/colors"));
-const Fonts = loadable(() => import("./../styles/settings/fonts"));
-const Gaps = loadable(() => import("../styles/settings/gaps"));
-const Normalize = loadable(() => import("./../styles/generic/normalize"));
-const Reset = loadable(() => import("./../styles/generic/reset"));
-const Elements = loadable(() => import("./../styles/base/elements"));
+import Colors from "./../styles/settings/colors";
+import Fonts from "./../styles/settings/fonts";
+import Gaps from "../styles/settings/gaps";
+import Normalize from "./../styles/generic/normalize";
+import Reset from "./../styles/generic/reset";
+import Elements from "./../styles/base/elements";
 
 const Page = ({ children }) => {
   return (
