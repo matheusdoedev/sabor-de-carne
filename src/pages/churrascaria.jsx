@@ -11,13 +11,9 @@ const SEO = loadable(() => import("../components/Seo/index"));
 const PageTitle = loadable(() => import("../components/Page-title/index"));
 const FormReserva = loadable(() => import("../components/Reserva/index"));
 // styled-components
-const FeaturesWrapper = loadable(() =>
-  import("../styles/components/FeaturesWrapper")
-);
-const FuncionamentoWrapper = loadable(() =>
-  import("../styles/components/FuncionamentoWrapper")
-);
-const FeatureInfo = loadable(() => import("../styles/components/FeatureInfo"));
+import { FeaturesWrapper } from "../styles/components/FeaturesWrapper";
+import { FuncionamentoWrapper } from "../styles/components/FuncionamentoWrapper";
+import { FeatureInfo } from "../styles/components/FeatureInfo";
 
 const Churrascaria = () => {
   const {

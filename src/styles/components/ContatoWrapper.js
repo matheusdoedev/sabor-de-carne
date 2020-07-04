@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-const ContatoWrapper = styled.div`
+export const ContatoWrapper = styled.div`
   & {
     padding: var(--gap-xl) 0;
 
@@ -34,5 +34,3 @@ const ContatoWrapper = styled.div`
     }
   }
 `;
-
-export default ContatoWrapper;

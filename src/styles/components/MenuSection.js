@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-const MenuSection = styled.section`
+export const MenuSection = styled.section`
   & {
     padding: var(--gap-xl) 0;
     background: var(--support-color-3);
@@ -16,5 +16,3 @@ const MenuSection = styled.section`
     }
   }
 `;
-
-export default MenuSection;

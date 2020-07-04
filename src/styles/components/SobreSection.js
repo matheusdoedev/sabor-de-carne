@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-const SobreSection = styled.section`
+export const SobreSection = styled.section`
   & {
     padding: var(--gap-xl) 0;
   }
@@ -14,5 +14,3 @@ const SobreSection = styled.section`
     max-width: 465px;
   }
 `;
-
-export default SobreSection;

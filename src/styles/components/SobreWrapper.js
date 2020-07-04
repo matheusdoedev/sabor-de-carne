@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-const SobreWrapper = styled.div`
+export const SobreWrapper = styled.div`
   & {
     padding: var(--gap-xl) 0;
 
@@ -28,5 +28,3 @@ const SobreWrapper = styled.div`
     }
   }
 `;
-
-export default SobreWrapper;

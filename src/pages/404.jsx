@@ -7,9 +7,7 @@ const Col = loadable(() => import("react-bootstrap/Col"));
 const Layout = loadable(() => import("../layouts/page"));
 const SEO = loadable(() => import("../components/Seo/index"));
 // styles
-const Page404wrapper = loadable(() =>
-  import("../styles/components/Page404wrapper")
-);
+import { Page404wrapper } from "../styles/components/Page404wrapper";
 
 const Page404 = () => (
   <Layout>

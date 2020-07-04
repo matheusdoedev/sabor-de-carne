@@ -10,10 +10,8 @@ const Img = loadable(() => import("gatsby-image"));
 const SEO = loadable(() => import("../components/Seo/index"));
 const PageTitle = loadable(() => import("../components/Page-title/index"));
 // styles
-const MenuWrapper = loadable(() => import("../styles/components/MenuWrapper"));
-const MenuItem = loadable(() =>
-  import("../styles/components/MenuItem")
-);
+import { MenuWrapper } from "../styles/components/MenuWrapper";
+import { MenuItem } from "../styles/components/MenuItem";
 
 const Menu = () => {
   const {

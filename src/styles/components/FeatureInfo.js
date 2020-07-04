@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-const FeatureInfo = styled.div`
+export const FeatureInfo = styled.div`
   & {
     background: var(--base-color);
     padding: var(--gap-sm);
@@ -41,5 +41,3 @@ const FeatureInfo = styled.div`
     }
   }
 `;
-
-export default FeatureInfo;

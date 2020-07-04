@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-const MenuItem = styled.div`
+export const MenuItem = styled.div`
   & {
     margin: var(--gap-sm) 0;
 
@@ -37,5 +37,3 @@ const MenuItem = styled.div`
     }
   }
 `;
-
-export default MenuItem;

@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import Button from "../objects/Button";
 
-const SaibaMaisBtn = styled(Button)`
+export const SaibaMaisBtn = styled(Button)`
   & {
     max-width: 217px;
     margin-top: var(--gap-md);
@@ -11,5 +11,3 @@ const SaibaMaisBtn = styled(Button)`
     }
   }
 `;
-
-export default SaibaMaisBtn;

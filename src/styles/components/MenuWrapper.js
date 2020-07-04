@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-const MenuWrapper = styled.section`
+export const MenuWrapper = styled.section`
   & {
     padding: var(--gap-lg) 0 var(--gap-xl);
     background: var(--support-color-1);
@@ -21,5 +21,3 @@ const MenuWrapper = styled.section`
     }
   }
 `;
-
-export default MenuWrapper;

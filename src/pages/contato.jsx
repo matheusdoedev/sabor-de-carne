@@ -10,9 +10,7 @@ const Img = loadable(() => import("gatsby-image"));
 const SEO = loadable(() => import("../components/Seo/index"));
 const PageTitle = loadable(() => import("../components/Page-title/index"));
 // styles
-const ContatoWrapper = loadable(() =>
-  import("../styles/components/ContatoWrapper")
-);
+import { ContatoWrapper } from "../styles/components/ContatoWrapper";
 
 const Contato = () => {
   const {

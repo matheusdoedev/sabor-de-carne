@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-const FuncionamentoWrapper = styled.section`
+export const FuncionamentoWrapper = styled.section`
   & {
     padding: var(--gap-xl) 0;
     background: var(--support-color-3);
@@ -22,5 +22,3 @@ const FuncionamentoWrapper = styled.section`
     }
   }
 `;
-
-export default FuncionamentoWrapper;

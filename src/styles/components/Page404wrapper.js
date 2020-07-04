@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-const Page404wrapper = styled.section`
+export const Page404wrapper = styled.section`
   & {
     padding: var(--gap-xl) 0;
 
@@ -9,5 +9,3 @@ const Page404wrapper = styled.section`
     }
   }
 `;
-
-export default Page404wrapper;
