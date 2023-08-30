@@ -1,80 +1,97 @@
-# Sabor de Carne
+# NextJS Boilerplate
 
-> Steakhouse
+It's a nextjs boilerplate to quickly start a nextjs project. This boilerplate use default Tailwind CSS plus SASS to style.
 
-[![NPM Version][npm-image]][npm-url]
-[![Build Status][travis-image]][travis-url]
-[![Downloads Stats][npm-downloads]][npm-url]
+## Installation
 
-This is a website for a fictional restaurant steakhouse made with ReactJS, GatsbyJS, BootStrap and Styled-Components
-
-<a href="https://sabordecarne.netlify.com"><img src="./github/thumbs/readme-thumb.jpg"></a>
-
-## Get Started
-
-Start:
+### 1. Clone the project
 
 ```sh
-npm run start
+git clone git@github.com:matheusdoedev/nextjs-boilerplate.git
 ```
 
-Production:
+## Running project in development mode
+
+### 1. Install dependencies
+
+```sh
+npm install
+
+yarn
+```
+
+### 2. Run project
+
+```sh
+npm run dev
+
+yarn dev
+```
+
+## Running project in production mode
+
+### 1. Install dependencies
+
+```sh
+npm install
+
+yarn
+```
+
+### 2. Build project
 
 ```sh
 npm run build
+
+yarn build
 ```
+
+### 3. Run project
 
 ```sh
-npm run serve
+npm start
+
+yarn start
 ```
 
-## About
+## Running project in production mode with Docker & Docker Compose
 
-### What is that?
+#### 1. Set production env variables
 
-<ul>
-<li>This is an institutional website project made with GatsbyJS, ReactJS, BootStrap and Styled-components.</li>
-</ul>
+.env.production
 
-### Why ?
+```env
+NODE_ENV='production'
+```
 
-<ul>
-<li>This is a project that I did with ReactJS , GatsbyJs, with the goal to I had more practice, experience and to study both technologies </li>
-</ul>
+#### 2. Run with docker-compose
 
-### Technologies
+```sh
+docker-compose up
 
-<ul>
-  <li><a href="https://www.gatsbyjs.org/">GatsbyJS</a></li>
-  <li><a href="https://pt-br.reactjs.org/">ReactJS</a></li>
-  <li><a href="https://react-bootstrap.github.io/">React BootStrap</a></li>
-  <li><a href="https://styled-components.com/">Styled-Components</a></li>
-</ul>
+# or in detach mode
 
-## Links
+docker-compose up -d
+```
 
-<ul>
-<li><a href="https://sabordecarne.netlify.com">Live</a></li>
-</ul>
+## Technologies used in this boilerplate
 
-## Meta
-
-Author: Matheus do É Santos – [Linkedin](https://www.linkedin.com/in/matheusdoe-dev/)
-
-Distributed under the MIT license. See `LICENSE` for more information.
+- React
+- Next.js
+- TypeScript
+- Axios
+- Formik
+- TailwindCSS
+- Yup
+- Testing Library
+- Jest
+- Prettier
+- SASS
 
 ## Contributing
 
-1. Fork it
+1. Fork it (<git@github.com:matheusdoedev/pizza-army.git>)
 2. Create your feature branch (`git checkout -b feature/fooBar`)
-3. Commit your changes (`git commit -am 'Add some fooBar'`)
+3. Commit your changes following conventional commits pattern (`git commit -am 'feat: add some feature'`)
 4. Push to the branch (`git push origin feature/fooBar`)
 5. Create a new Pull Request
-
-<!-- Markdown link & img dfn's -->
-
-[npm-image]: https://img.shields.io/npm/v/datadog-metrics.svg?style=flat-square
-[npm-url]: https://npmjs.org/package/datadog-metrics
-[npm-downloads]: https://img.shields.io/npm/dm/datadog-metrics.svg?style=flat-square
-[travis-image]: https://img.shields.io/travis/dbader/node-datadog-metrics/master.svg?style=flat-square
-[travis-url]: https://travis-ci.org/dbader/node-datadog-metrics

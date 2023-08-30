@@ -1,0 +1,27 @@
+@import '../tools/breakpoints';
+
+@mixin container() {
+  width: 100%;
+  max-width: 300px;
+  margin: 0 auto;
+
+  @media (min-width: $sm) {
+    max-width: 500px;
+  }
+
+  @media (min-width: $md) {
+    max-width: 720px;
+  }
+
+  @media (min-width: $lg) {
+    max-width: 920px;
+  }
+
+  @media (min-width: $xl) {
+    max-width: 1180px;
+  }
+
+  @media (min-width: $xxl) {
+    max-width: 1380px;
+  }
+}
